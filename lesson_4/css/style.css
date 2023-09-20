@@ -1,0 +1,137 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+/* Типи селекторів */
+
+/* Селектор * */
+* {
+	/* color: yellowgreen; */
+}
+
+/* Селектор тегу */
+p {
+	/* color: yellowgreen; */
+}
+a {
+	/* color: yellow; */
+}
+li {
+	/* color: green; */
+}
+h1,
+h2,
+h3 {
+	/* color: blue; */
+}
+
+/* Селектор класу */
+/* .block1 {
+	color: orange;
+}
+.block2-title {
+	color: blue;
+}
+.list {
+	color: violet;
+} */
+
+/* Селектор ID */
+#some-uniq-id2 {
+	/* color: blueviolet; */
+}
+
+/* ================================ */
+
+/* КОМБІНАЦІЇ СЕЛЕКТОРІВ */
+/* div.block3-text {
+	color: yellowgreen;
+}
+div.block4-text {
+	color: blueviolet;
+}
+a.list-link {
+	color: orange;
+}
+a.item-link {
+	color: yellow;
+}
+.header-title,
+.header-subtitle {
+	color: blue;
+}
+.main__block.block1 {
+	color: yellow;
+} */
+
+/* =================================== */
+
+/* КАСКАДНІСТЬ (ВКЛАДЕНІСТЬ) СЕЛЕКТОРІВ */
+/* ОБОВ'ЯЗКОВО ПРОБІЛ МІЖ ЕЛЕМЕНТАМИ */
+.block1-text a {
+	/* color: yellow; */
+}
+.block2-text .yellow-text {
+	/* color: yellow; */
+}
+.block3 * {
+	/* color: yellowgreen; */
+}
+.block1-text > p {
+	/* color: yellowgreen; */
+}
+
+/*
+Усі теги P які знаходяться 
+далі по коду після об'єктів з класом text
+та мають той самий рівень вкладеності
+*/
+.block1-text ~ p {
+	/* color: yellowgreen; */
+}
+
+/*
+Тег P який знаходяться беспосередньо 
+далі по коду після об'єктів з класом text
+та мають той самий рівень вкладеності
+*/
+.block1-text + p {
+	/* color: yellowgreen; */
+}
+
+/* Селектори атрибутів */
+[class*="__block"] {
+	/* color: yellowgreen; */
+}
+
+/* -------- ПРІОРИТЕТ СЕЛЕКТОРІВ ------------ */
+/*
+Основні правила формування пріоритетів: 
+1) У випадку рівнозначних селекторів більший 
+пріоритет буде у останього (нижчого) по коду.
+(Селектор класу та селектор атрибуту - рівнозначні)
+2) Більший пріоритет завжди буде у селектора,
+який звужує (уточює, конкретизує) пошук (запит).
+3) Пріоритет у рядкових (inline) стилів 
+(атрибут style="") вищий ніж у стилів 
+з окремого файлу (наприклад style.css)
+4) Флаг !important перезаписує пріоритет (не рекомендується)
+*/
+#span-yellow1 {
+	color: yellow;
+}
+#span-yellow2 {
+	color: yellow;
+}
+span.span-chocolate {
+	color: chocolate;
+}
+p.some-p {
+	color: chocolate;
+}
+p {
+	color: yellowgreen;
+}
+* {
+	color: blue;
+}
