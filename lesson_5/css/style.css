@@ -1,0 +1,124 @@
+/* ========================= ШРИФТИ =============================== */
+
+/*------------------- Підключення шрифтів ------------------------- */
+/* Google Fonts */
+/* @import url("https://fonts.googleapis.com/css?family=Skranji:regular,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+/* Підключення вручну */
+/* @import url("fonts.css"); */
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+	font-family: "Inter", sans-serif;
+	/* font-family: "Skranji", cursive; */
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 1.46;
+}
+
+/* ===========Header=============== */
+.header-title {
+	font-size: 30px;
+	color: rgba(151, 18, 18, 0.625);
+	font-weight: 700;
+	text-decoration: overline;
+}
+.header-subtitle {
+	font-size: 25px;
+	color: rgba(105, 151, 12, 0.821);
+	font-style: oblique;
+	font-weight: 600;
+	text-decoration: line-through;
+}
+.list {
+	text-align: center;
+}
+.list-link {
+	font-size: 20px;
+	font-weight: 700;
+	color: rgba(237, 237, 32, 0.855);
+	line-height: 1.6;
+	text-decoration: underline;
+}
+
+/* ===========Main=============== */
+.content-title {
+	font-size: 40px;
+	color: blue;
+	font-weight: 700;
+	line-height: 1.8;
+	text-align: right;
+	text-shadow:
+		5px 5px 10px rgba(24, 24, 169, 0.67),
+		-5px -2px 2px rgba(0, 128, 0, 0.552);
+}
+.text p {
+	color: red;
+	font-style: oblique;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+	text-transform: capitalize;
+	line-height: 2;
+	letter-spacing: 5px;
+}
+.advantages p {
+	color: rgba(178, 237, 60, 0.949);
+	font-style: normal;
+	text-align: right;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: lowercase;
+	line-height: 1.2;
+	word-spacing: 2px;
+	white-space: nowrap;
+}
+
+/* ===========Footer=============== */
+.list {
+	text-align: center;
+}
+.item-link {
+	font-size: 20px;
+	font-weight: 700;
+	color: blue;
+	text-decoration: underline;
+	line-height: 2;
+	text-transform: lowercase;
+}
+
+/* ===========Block Why=============== */
+.why-title {
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+	color: #37393f;
+	line-height: 1.27;
+}
+.why-subtitle {
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	color: #6b77e5;
+	line-height: 1.27;
+}
+
+/* ===========Block Project Information=============== */
+.project-title {
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	color: #37393f;
+	line-height: 1.27;
+}
+.project-list-item {
+	font-weight: 500;
+	text-indent: 30px;
+}
