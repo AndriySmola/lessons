@@ -1,0 +1,440 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.46;
+	/* padding: 100px; */
+}
+.block-practice {
+}
+.block1 {
+}
+.block1-title {
+	font-family: "Poppins";
+	font-weight: 600;
+	background-color: #7a956b;
+}
+.block1-text {
+	background-color: #77608d;
+}
+.block1-img {
+	background-color: #794f45;
+}
+.block1-img2 {
+	background-color: #794f45;
+}
+.block1-span {
+	background-color: #7a956b;
+}
+
+/* Відступи */
+/*================ padding======================== */
+.block1-title {
+	/* padding: 20px; */
+	/* padding: 20px 0px 50px 70px; */
+	/* padding-left: 70px; */
+}
+.block1-text {
+	/* padding: 20px; */
+	/* padding: 20px 50px; */
+	/* padding: 20px 70px 40px; */
+	/* padding-top: 70px; */
+	/* padding: 5% 8%; */
+}
+.block1-img {
+	/* padding: 20px; */
+	/* padding-left: 70px; */
+	/* padding-bottom: 70px; */
+	/* padding-top: 10%; */
+}
+.block1-span {
+	/* padding: 20px; */
+	/* padding-left: 70px; */
+	/* padding-top: 70px; */
+	/* padding-right: 70px; */
+}
+mark {
+	/* padding-left: 20px; */
+	/* padding-right: 20px; */
+	/* padding: 20px; */
+}
+
+/* Приклад відступу для батьківського елементу */
+/* Задаємо відступ батьківському елементу а не контенту */
+/* Вірно */
+.block1-text {
+	/* padding: 30px; */
+}
+/*НЕвірно */
+.block1-text p {
+	/* padding: 30px; */
+}
+p {
+	/* padding: 30px; */
+}
+
+/*============================ margin ===============================*/
+.block1-title {
+	/* margin: 20px; */
+	/* padding: 20px; */
+}
+.block1-text {
+	/* margin: 20px; */
+	/* padding: 20px; */
+}
+.block1-img {
+	/* margin: 20px; */
+	/* margin-top: 20px; */
+}
+.block1-span {
+	/* margin: 20px; */
+}
+
+/* Приклад відступу для батьківського елементу */
+/* Задаємо відступ батьківському елементу а не контенту */
+/* Вірно */
+.block1-title {
+	/* margin-bottom: 20px; */
+}
+.block1-text {
+	/* margin-bottom: 20px; */
+}
+
+/*НЕвірно */
+.block1-text p {
+	/* margin-bottom: 20px; */
+}
+
+/* Приклад поєднання відступів та застосування до батьківстких та дочірніх елементів */
+.block1-title {
+	/* padding: 20px; */
+	/* margin-bottom: 20px; */
+	/* margin-top: 20px; */
+	/* margin: 0px 20px; */
+}
+.block1-text {
+	/* padding: 20px; */
+	/* padding: 20px 20px 0px 20px; */
+	/* padding: 20px 20px 1px 20px; */
+	/* margin-bottom: 20px; */
+	/* margin: 0px 20px; */
+}
+.block1-text p {
+	/* margin-bottom: 20px; */
+}
+
+/* ================Ефект "схлопування"=================== */
+.block1-title {
+	/* margin-bottom: 50px; */
+}
+.block1-text {
+	/* margin-top: 50px; */
+	/* margin-bottom: 100px; */
+}
+.block1-img {
+	/* margin-bottom: 100px; */
+	/* margin-top: 150px; */
+}
+.block1-span {
+	/* margin-top: 50px; */
+	/* margin-left: 50px; */
+}
+
+/*=========================== Від'ємні значення =====================*/
+.block1-title {
+	/* margin: 0px -30px; */
+	/* margin-bottom: -100px; */
+}
+.block1-img {
+	/* margin: 0px -30px; */
+	/* margin-top: -100px; */
+	/* margin-bottom: -50px; */
+}
+.block1-span {
+	/* margin: 0px -50px; */
+}
+
+/* ====================властивість WIDTH======================= */
+.block1-title {
+	/* width: 200px; */
+	/* width: 20%; */
+}
+.block1-text {
+	/* width: 200px; */
+	/* width: 50%; */
+}
+.block1-img {
+	/* width: 200px; */
+	/* width: 100%; */
+}
+.block1-span {
+	/* width: 200px; */
+	/* width: 20%; */
+}
+
+/* ====================властивість MAX-WIDTH/властивість MIN-WIDTH==================== */
+.block1-title {
+	/* max-width: 600px; */
+	/* max-width: 100%; */
+	/* max-width: 50%; */
+}
+.block1-text {
+	/* max-width: 700px; */
+	/* max-width: 100%; */
+	/* max-width: 50%; */
+	/* min-width: 600px; */
+}
+.block1-img {
+	/* max-width: 500px; */
+	/* max-width: 100%; */
+}
+.block1-span {
+	/* max-width: 100px; */
+	/* min-width: 600px; */
+}
+
+/* =====================властивість HEIGHT/MIN-HEIGHT/MAX-HEIGHT===================== */
+.block1-text {
+	/* height: 200px; */
+	/* min-height: 200px; */
+	/* max-height: 100px; */
+}
+.block1-img {
+	/* height: 200px; */
+	/* min-height: 200px; */
+	/* max-height: 100px; */
+}
+
+/* =====================властивість BOX-SIZING===================== */
+.block1-title {
+	/* margin-bottom: 100px; */
+	/* height: 100%; */
+}
+.block1-text {
+	/* width: 400px; */
+	/* padding: 50px; */
+	/* margin-left: 50px; */
+	/* margin-right: 200px; */
+}
+
+/* ====================різниця між width: 100% та width: auto====================== */
+.block1-text {
+	/* margin-right: 200px; */
+	/* width: auto; */
+	/* width: 100%; */
+}
+
+/* ===============властивість OVERFLOW================= */
+.block1-text {
+	/* max-height: 100px; */
+	/* overflow: hidden; */
+	/* overflow: clip; */
+	/* overflow: scroll; */
+	/* overflow: auto; */
+	/* overflow: visible; */
+}
+
+/* ===================властивість VERTICAL ALIGN================= */
+.block1-img {
+	/* width: 400px; */
+	/* vertical-align: middle; */
+	/* vertical-align: bottom; */
+}
+.block1-img2 {
+	/* width: 200px; */
+	/* vertical-align: middle; */
+}
+
+/* ====================властивість DISPLAY======================= */
+.block1-title {
+	/* display: inline; */
+	/* display: inline-block; */
+	/* display: none; */
+	/* max-width: 500px; */
+	/* height: 800px; */
+	/* padding: 15px; */
+	/* margin-bottom: 20px; */
+	/* vertical-align: bottom; */
+}
+.block1-text {
+	/* display: inline; */
+	/* display: inline-block; */
+	/* max-width: 500px; */
+	/* height: 300px; */
+	/* padding: 15px; */
+	/* margin-bottom: 20px; */
+}
+.block1-img {
+	/* max-width: 200px; */
+	/* display: block; */
+	/* display: none; */
+	/* display: inline; */
+	/* padding: 15px; */
+	/* margin-bottom: 30px; */
+}
+.block1-img2 {
+	/* max-width: 200px; */
+	/* display: block; */
+	/* display: inline; */
+	/* padding: 15px; */
+	/* margin-bottom: 30px; */
+	/* vertical-align: bottom; */
+}
+.block1-span {
+	/* display: inline-block; */
+	/* display: block; */
+	/* width: 300px; */
+	/* padding: 15px; */
+	/* margin-bottom: 20px; */
+}
+
+/* ====================центрування блоку====================== */
+.block1-text {
+	/* max-width: 500px; */
+	/* margin: 0 auto 30px; */
+	/* padding: 15px; */
+}
+.block1-img {
+	/* max-width: 500px; */
+	/* margin: 0 auto 30px; */
+	/* display: block; */
+	/* padding: 15px; */
+}
+
+/* =======================приклад з посиланням====================== */
+.block1-text {
+	/* padding: 15px; */
+}
+.block1-text p {
+	/* margin-bottom: 15px; */
+}
+.block1-text a {
+	/* color: yellowgreen; */
+	/* display: inline-block; */
+	/* margin-bottom: 15px; */
+}
+
+/* =======================Макети========================== */
+.block-models {
+	margin: 50px 0px;
+}
+
+/* ==============================Consulting============================= */
+.why {
+	color: #7d7d7d;
+	margin: 0 auto 50px;
+	max-width: 700px;
+}
+.why-img {
+	width: 100%;
+	margin-bottom: 24px;
+}
+.why-title {
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #37393f;
+	margin-bottom: 3px;
+}
+.why-text {
+	margin-bottom: 41px;
+}
+.why-subtitle {
+	color: #6b77e5;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+.benefits {
+	font-size: 0;
+}
+.benefits-img {
+	width: 50%;
+	margin-right: 30px;
+}
+.benefits-block {
+	display: inline-block;
+}
+.benefits-title {
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #37393f;
+	margin-bottom: 15px;
+}
+.benefits-subtitle {
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #40ddb6;
+	margin-bottom: 24px;
+}
+.benefits-list li {
+	margin-bottom: 35px;
+}
+.benefits-item {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.46;
+	padding: 0 0 0 35px;
+	color: #7d7d7d;
+}
+
+/* ==============================Jewellery============================= */
+.what {
+	max-width: 1170px;
+	margin: 0 auto;
+	background-color: #fff9f4;
+	font-size: 0px;
+}
+.about {
+	display: inline-block;
+	max-width: 563px;
+	padding: 20px 10px;
+	margin-right: 28px;
+}
+.about-text {
+	color: #d06b00;
+	font-family: "Inter";
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+.about-title {
+	color: #0e333d;
+	font-family: DM Serif Text;
+	font-size: 59px;
+	line-height: 1.46;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+.about-big-text {
+	color: #474747;
+	font-family: Inter;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.earrings1 {
+	max-width: 273px;
+	margin-right: 22px;
+}
+.earrings2 {
+	max-width: 273px;
+}
+
+/* ==============================Footer============================= */
+.list {
+	text-align: center;
+}
