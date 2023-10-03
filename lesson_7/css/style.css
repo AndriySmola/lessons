@@ -1,0 +1,493 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+/* Підключення шрифтів вручну */
+@import url("fonts.css");
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	padding: 50px 15px;
+}
+.header {
+	text-align: center;
+	color: #000;
+}
+.header-list-item {
+	margin-bottom: 15px;
+}
+
+/* ====================Практика уроку===================== */
+.block1 {
+	padding: 30px;
+}
+.block1-title {
+	background-color: #7a956b;
+}
+.block1-text {
+	background-color: #77608d;
+}
+.block1-img2 {
+	background-color: #794f45;
+	width: 500px;
+}
+.block1-span {
+	background-color: #7a956b;
+}
+/* --------------------------border----------------------------- */
+
+/* .block1-title {
+	width: 300px;
+	border: 15px double transparent;
+}
+.block1-text {
+	width: 500px;
+	padding: 15px;
+	border: 5px dotted yellow;
+}
+.block1-text:hover {
+	width: 500px;
+	padding: 15px;
+	border: 5px dotted transparent;
+}
+.block1-text a {
+	color: blue;
+	border-bottom: 2px dashed;
+}
+.block1-text a:hover {
+	color: yellowgreen;
+}
+.block1-img2 {
+	padding: 15px;
+	border-top: 30px solid yellowgreen;
+	border-right: 50px dashed blue;
+	border-bottom: 15px solid blue;
+}
+.block1-img2:hover {
+	border-top: 30px solid transparent;
+	border-right: 50px dashed transparent;
+	border-bottom: 15px solid transparent;
+}
+.block1-span {
+	border: 5px solid yellow;
+} */
+/* -----------------Triangle Top Left Shape------------------ */
+.figures {
+	/* width: 0; */
+	/* height: 0; */
+	/* border-top: 100px solid red; */
+	/* border-right: 100px solid transparent; */
+}
+/* -----------------Triangle Up Shape------------------- */
+.figures {
+	/* width: 0; */
+	/* height: 0; */
+	/* border-left: 50px solid transparent; */
+	/* border-right: 50px solid transparent; */
+	/* border-bottom: 100px solid red; */
+	/* margin-top: 10px; */
+}
+
+/* --------------------------outline----------------------------- */
+/* .block1-title {
+	width: 300px;
+	outline: 20px solid red;
+}
+.block1-text {
+}
+.block1-text a {
+	color: yellow;
+}
+.block1-text a:hover {
+	outline: 1px dotted yellowgreen;
+}
+.block1-img2 {
+	outline: 2px solid red;
+}
+.block1-span {
+	outline: 10px solid red;
+} */
+
+/* -------------------------border-radius------------------------------ */
+/* .block1-title {
+	border-radius: 5px 20px;
+	width: 200px;
+	height: 50px;
+}
+.block1-text {
+	border-radius: 30% 70% 30% 70% / 30% 30% 70% 70%;
+	padding: 115px;
+}
+.block1-img2 {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+.block1-span {
+	border-radius: 20px;
+} */
+
+/* --------------------------box-shadow----------------------------- */
+/* .block1-title {
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 25px;
+	box-shadow:
+		5px 5px 10px 5px #000,
+		-5px -5px 10px 5px orange;
+}
+.block1-text {
+	width: 600px;
+	padding: 15px;
+	margin-bottom: 25px;
+	box-shadow:
+		inset 0px 0px 15px 5px #000,
+		5px 5px 10px 5px orange;
+	border-radius: 5px;
+}
+.block1-img2 {
+	box-shadow: 10px 10px 15px 5px blue;
+	margin-bottom: 25px;
+}
+.block1-span {
+	box-shadow: 5px 5px 10px 5px #000;
+	display: inline-block;
+} */
+
+/* ----------------------------opacity--------------------------- */
+/* .block1-title {
+	margin-bottom: 10px;
+	width: 200px;
+	padding: 10px;
+	opacity: 0.5;
+}
+.block1-text {
+	margin-bottom: 10px;
+	background-color: rgba(119, 96, 141, 0.319);
+}
+.block1-text a {
+	opacity: 0.5;
+	color: blue;
+}
+.block1-text a:hover {
+	color: orange;
+	opacity: 0.9;
+	outline: 3px solid;
+}
+.block1-img2 {
+	margin-bottom: 10px;
+	opacity: 0.3;
+}
+.block1-span {
+	opacity: 0.7;
+} */
+
+/* ----------------------------visibility--------------------------- */
+/* .block1-text {
+	visibility: hidden;
+}
+.block1-text a {
+	visibility: visible;
+	opacity: 0.5;
+} */
+/* .block1-text {
+	opacity: 0;
+}
+.block1-text a {
+	visibility: hidden;
+}
+.block1-img2 {
+	visibility: hidden;
+} */
+
+/* ====================Практика макетів===================== */
+
+/* ====================Licencing============================ */
+.model1 {
+	padding: 50px 15px;
+	max-width: 1248px;
+	margin: 0 auto;
+}
+.template-block {
+	max-width: 202px;
+	margin: 0 auto;
+	font-size: 0px;
+	margin-bottom: 25px;
+}
+.square {
+	width: 12px;
+	height: 12px;
+	background: #40ddb6;
+	display: inline-block;
+	margin-right: 6px;
+}
+.template {
+	color: #37393f;
+	font-size: 18px;
+	font-weight: 500;
+}
+.licencing {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins";
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 70px;
+}
+/* -------------дублюючі блоки----------------- */
+.licence-block-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+.licence-block-subtitle {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 700;
+}
+.licence {
+	color: #40ddb6;
+	font-size: 30px;
+	font-weight: 400;
+	padding-left: 15px;
+}
+
+/* -----------------------------icons------------------------------------- */
+.icons {
+	margin-bottom: 100px;
+}
+.icons-text {
+	line-height: 1.46;
+	margin-bottom: 42px;
+}
+
+/* -----------------------photography----------------------- */
+.photography {
+	margin-bottom: 100px;
+}
+.photography-text {
+	line-height: 1.46;
+	margin-bottom: 35px;
+}
+.pixels-subtitle {
+	margin-bottom: 19px;
+}
+.pixels-text {
+	margin-bottom: 35px;
+	color: #40ddb6;
+	line-height: 1.46;
+}
+.unsplash-subtitle {
+	margin-bottom: 12px;
+}
+.unsplash-text {
+	color: #40ddb6;
+	line-height: 1.46;
+}
+
+/* -----------------------fonts----------------------- */
+.fonts {
+	margin-bottom: 50px;
+}
+.fonts-title {
+	margin-bottom: 20px;
+}
+.fonts-text {
+	line-height: 1.46;
+}
+.fonts-span {
+	font-weight: 500;
+	color: #40ddb6;
+}
+/* ----------------------------------------------------------------- */
+
+/* ====================Project Information============================ */
+.model2 {
+	max-width: 860px;
+	padding: 50px 15px;
+	margin: 0 auto;
+}
+.project-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+.project-text {
+	line-height: 1.46;
+	margin-bottom: 35px;
+}
+.project-text p {
+	margin-bottom: 24px;
+}
+.project-list-first {
+	font-weight: 500;
+	line-height: 1.46;
+	margin-bottom: 35px;
+	padding-left: 27px;
+}
+.project-list-first li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.project-list-item {
+	margin-bottom: 35px;
+}
+.project-list-second {
+	font-weight: 500;
+	line-height: 1.46;
+	margin-bottom: 35px;
+	padding-left: 16px;
+}
+/* ----------------------------------------------------------------- */
+
+/* ====================What We Do============================ */
+.model3 {
+	padding: 50px 15px;
+	margin: 0 auto;
+	max-width: 1133px;
+	font-size: 0px;
+}
+.about {
+	font-family: "Cormorant Infant";
+	font-weight: 700;
+	max-width: 503px;
+	display: inline-block;
+	padding: 70px 0px;
+	margin-right: 80px;
+	vertical-align: top;
+}
+.about-text {
+	color: #d58417;
+	font-size: 20px;
+	margin-bottom: 36px;
+}
+.about-title {
+	font-size: 64px;
+	color: #000;
+	margin-bottom: 27px;
+}
+.about-big-text {
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+/* ------------------------whatwedo-images-------------------------- */
+.whatwedo-images {
+	max-width: 520px;
+	display: inline-block;
+	font-size: 0px;
+}
+.whatwedo-image-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 235px;
+	border: 1px solid #502203;
+	padding-right: 10px;
+}
+.whatwedo-image-wrap01 {
+	margin-right: 30px;
+	padding-top: 14px;
+}
+.woman1 {
+	margin-left: -10px;
+	margin-bottom: -14px;
+	border-radius: 235px;
+}
+.whatwedo-image-wrap02 {
+	padding-top: 19px;
+}
+.woman2 {
+	margin-bottom: -13px;
+	margin-left: -10px;
+	border-radius: 235px;
+}
+/* ----------------------------------------------------------------- */
+
+/* ===================Clothing for Women==================== */
+.model4 {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.top-block {
+	font-size: 0px;
+	margin-bottom: 30px;
+}
+.top-block-element {
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8a33fd;
+	display: inline-block;
+	margin-left: -15px;
+	vertical-align: top;
+}
+.top-block-title {
+	font-family: "Coresansc", sans-serif;
+	color: #3c4242;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	display: inline-block;
+	padding-left: 12px;
+}
+.content-block {
+	font-family: "Causten" sans-serif;
+}
+.content-block-subtitle {
+	color: #807d7e;
+	font-family: "Coresansc", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.content-block-text {
+	color: #807d7e;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 20px;
+}
+.content-block-span {
+	color: #807d7e;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+.bottom-link {
+	color: #807d7e;
+	font-family: "Coresansc", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+/* ----------------------------------------------------------------- */
+
+/* ==============================Footer============================= */
+.list {
+	text-align: center;
+	color: #000;
+}
+.list-item {
+	margin-bottom: 15px;
+}
