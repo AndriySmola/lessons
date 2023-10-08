@@ -1,0 +1,426 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+/* Підключення шрифтів вручну */
+@import url("fonts.css");
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	padding: 50px 15px;
+}
+.header {
+	text-align: center;
+	color: #000;
+}
+.header-list-item {
+	margin-bottom: 15px;
+}
+
+/* ====================Практика уроку===================== */
+.block1 {
+	padding: 30px;
+	margin-bottom: 50px;
+	/* background-color: rgba(0, 128, 0, 0.474); */
+}
+.block1-title {
+	/* background-image: url("../img/platform-logo.png"); */
+}
+.block1-text {
+}
+.block1-span {
+}
+
+/* ------------------------------------------------------- */
+.block1-text {
+	padding: 40px;
+
+	/* ----------------Окремі властивості----------------- */
+	/* background-color: rgba(0, 128, 0, 0.474); */
+	/* background-color: yellowgreen; */
+
+	/* background-image: url("../img/platform-logo.png"); */
+	/* background-image: linear-gradient(
+		180deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	); */
+	/* background-image: radial-gradient(
+		circle,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(29, 253, 168, 1) 41%,
+		rgba(114, 138, 224, 0.9276960784313726) 67%,
+		rgba(252, 176, 69, 1) 100%
+	); */
+
+	/*--------- background-repeat------------ */
+	/* (за замовченням) */
+	/* background-repeat: repeat; */
+	/* height: 3000px; */
+	/* Не повторяти */
+	/* background-repeat: no-repeat; */
+	/* Повтор по горизонталі */
+	/* background-repeat: repeat-x; */
+	/* Повтор по вертикалі */
+	/* background-repeat: repeat-y; */
+	/* background-image: url("../img/repeat.jpg"); */
+
+	/*--------- background-position: горизонталь вертикаль------------ */
+	/* background-image: url("../img/platform-logo.png"); */
+	/* background-repeat: no-repeat; */
+	/* background-position: 60px 60px; */
+	/* background-position: center bottom; */
+	/* background-position: right bottom; */
+	/* background-position: left bottom; */
+	/* background-position: 50%; */
+	/* background-position: center center; */
+	/* background-position: 0 50%; */
+
+	/* ------------------background-attachment------------------ */
+	/* background-attachment: fixed; */
+
+	/*----------------------background-size----------------------------*/
+	/* background-size: ширина висота */
+
+	/* Задаємо ширину */
+	/* background-size: 2000px; */
+
+	/* Задаємо висоту */
+	/* background-size: auto 200px; */
+
+	/* background-size: 50%; */
+	/* background-size: auto 50%; */
+
+	/* background-size: contain; */
+	/* background-size: cover; */
+	/* background-size: 100% 100%; */
+	/* background-position: center; */
+
+	/*----------------------Універсальна властивість - background----------------------------*/
+	/* background: yellowgreen url("../img/platform-logo.png") 0 0 / auto no-repeat fixed; */
+	/* background: yellowgreen url("../img/platform-logo.png") center no-repeat; */
+	/* background: green url("../img/honey.jpg") 0 0 / auto no-repeat scroll; */
+	/* background: green linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%) 0 0 / 200px no-repeat; */
+	/* background: green linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%) 100px 100px / 200px 200px no-repeat; */
+	/* background: green linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%) center / 10px no-repeat; */
+
+	/*------------------мультіфон----------------*/
+
+	/* background: url("../img/platform-logo.png") 0 0 / 200px no-repeat; */
+	/* background:
+		url("../img/platform-logo.png") 50% / 500px no-repeat,
+		url("../img/image-01.jpg") bottom right / 500px no-repeat,
+		linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%); */
+}
+
+.block1-span {
+	/* background-color: yellowgreen; */
+	/* background: url("../img/platform-logo.png") 0 0 / 200px no-repeat; */
+	/* background: url("../img/platform-logo.png") 0 0 repeat; */
+}
+
+/* ------------------------------------------------------- */
+
+/* ====================Практика макетів===================== */
+
+/* ====================Consulting01============================ */
+.model1 {
+	max-width: 742px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+.consulting01 {
+	padding: 0px 52px 0px 69px;
+}
+.consulting01-label {
+	color: #37393f;
+	font-weight: 500;
+	margin-bottom: 16px;
+	background: url("../img/consulting_01/Box.svg") 0 5px no-repeat;
+	padding-left: 18px;
+	line-height: 1.22;
+}
+.consulting01-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	max-width: 417px;
+	margin-bottom: 20px;
+}
+.consulting01-text {
+	line-height: 1.46;
+	margin-bottom: 20px;
+}
+.consulting01-text p {
+	margin-bottom: 15px;
+}
+.consulting01-list {
+	margin-bottom: 43px;
+}
+.consulting01-list-item {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	line-height: 1.65;
+	margin-bottom: 23px;
+	background: url("../img/consulting_01/li.svg") 0 3px no-repeat;
+	padding-left: 35px;
+}
+.honors {
+	font-size: 0px;
+	margin-bottom: 37px;
+}
+.honors-experience {
+	margin-right: 21px;
+	background: url("../img/consulting_01/Icon01.svg") 31px 32px no-repeat;
+}
+.honors-block {
+	display: inline-block;
+	max-width: 293px;
+	padding: 32px;
+}
+.honors-subtitle {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 3px;
+	padding-left: 58px;
+}
+.honors-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.35;
+	padding-left: 58px;
+}
+.honors-awards {
+	background: url("../img/consulting_01/Icon02.svg") 31px 32px no-repeat;
+}
+.consulting01-bottom-link {
+	max-width: 184px;
+	padding: 22px 27px;
+	background-color: #6b77e5;
+	color: #fff;
+	font-weight: 600;
+}
+/* ----------------------------------------------------------------- */
+
+/* ====================Consulting02============================ */
+.consulting02 {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.consulting02-upper-content {
+	max-width: 852px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 47px;
+}
+.consulting02-label {
+	max-width: 148px;
+	margin: 0 auto;
+	color: #37393f;
+	font-weight: 500;
+	margin-bottom: 14px;
+	background: url("../img/consulting_02/Box.svg") 0px 5px no-repeat;
+	line-height: 1.22;
+	padding-left: 18px;
+}
+.consulting02-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 14px;
+}
+.consulting02-text {
+	line-height: 1.46;
+}
+.images-row {
+}
+.row01 {
+	font-size: 0px;
+	margin-bottom: 58px;
+}
+.row02 {
+	font-size: 0px;
+}
+.images-row-item {
+	display: inline-block;
+	width: 384px;
+}
+.images-row-item:not(:last-child) {
+	margin-right: 34px;
+}
+.images-row-item-background {
+	width: 100%;
+	height: 501px;
+}
+.images-row-item-subtitle {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+.images-row-item-date {
+	font-size: 14px;
+	line-height: 1.46;
+	background: url("../img/consulting_02/calendar.svg") no-repeat;
+	padding-left: 25px;
+}
+.background-item01 {
+	background: url("../img/consulting_02/Photo1.jpg") no-repeat;
+}
+.background-item02 {
+	background: url("../img/consulting_02/Photo2.jpg") no-repeat;
+}
+.background-item03 {
+	background: url("../img/consulting_02/Photo3.jpg") no-repeat;
+}
+.background-item04 {
+	background: url("../img/consulting_02/Photo4.jpg") no-repeat;
+}
+.background-item05 {
+	background: url("../img/consulting_02/Photo5.jpg") no-repeat;
+}
+.background-item06 {
+	background: url("../img/consulting_02/Photo6.jpg") no-repeat;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ====================Euphoria============================ */
+.euphoria {
+	max-width: 1428px;
+	margin: 0 auto;
+	padding: 50px 100px;
+}
+.euphoria-row {
+	font-size: 0px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.euphoria-row-item {
+	display: inline-block;
+	width: 50%;
+	min-height: 640px;
+}
+.euphoria-item01 {
+	padding: 183px 74px 174px;
+	background: url("../img/euphoria01/euphoria01.jpg") center / cover no-repeat;
+}
+.euphoria-item02 {
+	background: url("../img/euphoria01/euphoria02.jpg") center / cover no-repeat;
+	vertical-align: top;
+}
+.item01-content {
+	font-family: Causten;
+}
+.item01-content-title {
+	color: #fff;
+	font-family: "Coresansc", sans-serif;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	margin-bottom: 30px;
+}
+.item01-content-text {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+.item01-content-link {
+	display: inline-block;
+	padding: 12px 44px;
+	border-radius: 8px;
+	background: #fff;
+	color: #3c4242;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ===================Clothing for Women==================== */
+.model4 {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+.top-block {
+	margin-bottom: 30px;
+}
+.top-block-title {
+	font-family: "Coresansc", sans-serif;
+	color: #3c4242;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	display: inline-block;
+	padding-left: 15px;
+	background: url("../img/euphoria/rectangle.svg") no-repeat;
+	margin-left: -15px;
+}
+.content-block {
+	font-family: "Causten", sans-serif;
+}
+.content-block-subtitle {
+	color: #807d7e;
+	font-family: "Coresansc", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.content-block-text {
+	color: #807d7e;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.content-block-text p {
+	margin-bottom: 20px;
+}
+.content-block-span {
+	color: #807d7e;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+.bottom-link {
+	color: #807d7e;
+	font-family: "Coresansc", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+/* ----------------------------------------------------------------- */
+
+/* ==============================Footer============================= */
+.list {
+	text-align: center;
+	color: #000;
+}
+.list-item {
+	margin-bottom: 15px;
+}
