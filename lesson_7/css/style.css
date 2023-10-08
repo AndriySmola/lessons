@@ -447,7 +447,7 @@ body {
 	padding-left: 12px;
 }
 .content-block {
-	font-family: "Causten" sans-serif;
+	font-family: "Causten", sans-serif;
 }
 .content-block-subtitle {
 	color: #807d7e;
@@ -464,6 +464,9 @@ body {
 	font-weight: 400;
 	line-height: 1.67;
 	letter-spacing: 0.4px;
+	margin-bottom: 20px;
+}
+.content-block-text p {
 	margin-bottom: 20px;
 }
 .content-block-span {
