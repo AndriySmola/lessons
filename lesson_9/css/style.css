@@ -1,0 +1,814 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	/* padding: 50px 15px; */
+}
+.header {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 25px;
+	background-color: #cecece;
+	padding: 15px 0px;
+}
+.header-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.header-list-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.header-list-link:hover {
+	text-decoration: underline;
+}
+
+/* ====================Практика уроку===================== */
+.block1 {
+	padding: 50px 30px;
+	margin-bottom: 50px;
+}
+.link {
+	font-size: 30px;
+}
+
+/* =============== Псевдокласи ================= */
+/* Псевдокласи стану */
+/* :hover */
+/* .link {
+	color: yellowgreen;
+} */
+
+/* .link:hover {
+	color: blue;
+	text-decoration: overline;
+	text-decoration: line-through;
+} */
+/* ul.list:hover {
+	background-color: rgb(255, 0, 43);
+} */
+/* ul.list:active {
+	background-color: rgb(30, 56, 34);
+} */
+/* main:hover .link {
+	color: red;
+	text-decoration: underline;
+} */
+/* .hover-expl {
+}
+.hover-expl__block {
+	width: 300px;
+	height: 300px;
+	background-color: yellowgreen;
+	opacity: 0;
+	visibility: hidden;
+}
+.hover-expl__block:hover {
+	opacity: 1;
+	visibility: visible;
+}
+.hover-expl:hover .hover-expl__block {
+	visibility: visible;
+}
+.hover-expl:hover a {
+	text-decoration: underline;
+	color: blue;
+	font-size: 20;
+} */
+/* :active */
+/* .link:active {
+	color: blue;
+	text-decoration: overline;
+} */
+
+/* :visited */
+/* .link:visited {
+	color: gray;
+} */
+/* :focus */
+/* .link:focus {
+	color: gray;
+	outline: 5px dotted yellowgreen;
+} */
+/* :target */
+/* .show-block {
+	font-size: 25px;
+}
+.block {
+	width: 300px;
+	height: 300px;
+	background-color: yellowgreen;
+	visibility: hidden;
+}
+.block:target {
+	visibility: visible;
+} */
+/* ---------------------------------------------------------------- */
+
+/* Псевдокласи положення у коді */
+/* .text p {
+	margin-bottom: 15px;
+	font-size: 25px;
+	line-height: 1.3;
+} */
+
+/* :first-child */
+/* .text p:first-child {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* .text *:first-child {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+
+/* :first-of-type */
+/* .text p:first-of-type {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* :last-child */
+/* .text p:last-child {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* :last-of-type */
+/* .text p:last-of-type {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* :nth-child */
+/* .text p:nth-child(3) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* .text *:nth-child(1),
+.text *:nth-child(3),
+.text *:nth-child(5) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* алгоритм кожен другий починаючи з 1го/або з 2го */
+/* .text p:nth-child(odd) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* .text p:nth-child(even) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* Алгоритм "кожен-через" */
+/* коженn + починаючи з */
+/* .text p:nth-child(2n + 1) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+} */
+/* .text p:nth-child(2n + 2) {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 1.6;
+	text-decoration: underline;
+} */
+/* :not(селектор) 
+Псевдоклас виключення */
+/* .text p:not(:last-child) {
+	margin-bottom: 15px;
+} */
+/* .text p:not(:first-child) {
+	margin-top: 15px;
+} */
+/* Практика з уроку */
+/* якщо відступи неоднакові */
+/* .block {
+	background-color: rgb(78, 9, 78);
+	padding: 30px;
+}
+.block > * {
+	margin-bottom: 20px;
+}
+.block-title {
+	font-size: 40px;
+	font-weight: 700;
+	color: lightgrey;
+	margin-bottom: 20px;
+}
+.block-text {
+	color: lightgrey;
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+.block-link {
+	color: yellowgreen;
+	text-decoration: underline;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.block-link:hover {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.block > *:last-child {
+	margin-bottom: 0px;
+} */
+
+/* =============== Псевдоелементи ================= */
+/* .section {
+}
+.section::before {
+	content: "Hello, Andrew!";
+}
+.section::after {
+	content: "Bye, Andrew!";
+} */
+
+/* .practice-title {
+	font-size: 50px;
+	font-weight: 700;
+	color: #000;
+}
+.practice-title::before {
+	content: "";
+	background-color: rgb(255, 191, 0);
+	height: 38px;
+	width: 12px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 20px;
+} */
+/* штука з ul :)) */
+/* .list {
+}
+.list-link {
+}
+.list-link::before {
+	content: "";
+	background: url("../img/li.svg") 0 0 no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	opacity: 0.2;
+}
+.list-link:hover::before {
+	opacity: 1;
+}
+.list-link:not(:last-child) {
+	margin-bottom: 20px;
+} */
+/* .list {
+}
+.list-link {
+}
+.list-link::before {
+	content: "";
+	background-color: #000;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.2;
+	margin-right: 20px;
+}
+.list-link:hover::before {
+	opacity: 1;
+}
+.list-link:not(:last-child) {
+	margin-bottom: 20px;
+} */
+/* ------------------------------------- */
+/* .test::before {
+	content: "";
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background: url("../img/image-01.jpg") center / cover no-repeat;
+} */
+/* ------------------------------------------------------- */
+
+/* ====================Практика макетів===================== */
+
+/* ====================Consulting01============================ */
+.consulting01 {
+	color: #7d7d7d;
+	padding: 50px 15px;
+	margin: 0 auto;
+	max-width: 722px;
+}
+.consulting01-title {
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #37393f;
+	margin-bottom: 12px;
+}
+.consulting01-text {
+	margin-bottom: 40px;
+	line-height: 1.46;
+}
+.consulting01-text > * {
+	margin-bottom: 20px;
+}
+.consulting01-text > *:last-child {
+	margin-bottom: 0px;
+}
+.consulting01-subtitle {
+	color: #6b77e5;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+.consulting01-benefits {
+	font-size: 0px;
+	margin-bottom: 50px;
+}
+.consulting01-img {
+	max-width: 331px;
+	width: 100%;
+	margin-right: 29px;
+}
+.consulting01-benefits-block {
+	display: inline-block;
+	max-width: 332px;
+}
+.consulting01-benefits-title {
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #37393f;
+	margin-bottom: 15px;
+}
+.consulting01-benefits-subtitle {
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	color: #40ddb6;
+	margin-bottom: 21px;
+}
+.consulting01-benefits-item {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.46;
+	color: #7d7d7d;
+}
+.consulting01-benefits-item:hover {
+	text-decoration: underline;
+}
+.consulting01-benefits-item::before {
+	content: "";
+	background: url("../img/consulting_01/li.svg") 0 0 no-repeat;
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	opacity: 1;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.consulting01-benefits-item:hover::before {
+	opacity: 0.7;
+}
+.consulting01-benefits-list li:not(:last-child) {
+	margin-bottom: 30px;
+}
+/* ----------------------------------------------------------------- */
+
+/* ====================Consulting02============================ */
+.consulting02 {
+	max-width: 705px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.label {
+	color: #37393f;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.label::before {
+	content: "";
+	background: url("../img/consulting_02/consulting_box.svg");
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 6px;
+}
+.consulting02-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	text-transform: capitalize;
+	max-width: 415px;
+	margin-bottom: 10px;
+}
+.consulting02-text {
+	margin-bottom: 48px;
+	line-height: 1.46;
+}
+.consulting02-text > * {
+	margin-bottom: 16px;
+}
+.consulting02-text > *:last-child {
+	margin-bottom: 0px;
+}
+.consulting02-list {
+	margin-bottom: 48px;
+}
+.consulting02-list-item {
+	padding: 28px 41px 28px 38px;
+	border: 1px solid #e3e3e3;
+}
+.consulting02-list-item p {
+	padding-left: 48px;
+}
+.consulting02-list-item .consulting02-text {
+	margin-bottom: 0px;
+}
+.consulting02-list-item:not(:last-child) {
+	margin-bottom: 31px;
+}
+.consulting02-list-item:hover {
+	border: 1px solid #40ddb6;
+	box-shadow: inset 0 0 5px #40ddb6;
+}
+.consulting02-subtitle {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 12px;
+}
+.consulting02-subtitle::before {
+	content: "";
+	background: url("../img/consulting_02/li.svg");
+	height: 27px;
+	width: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 19px;
+}
+.consulting02-link {
+	display: inline-block;
+	padding: 21px 35px;
+	font-weight: 600;
+	text-transform: capitalize;
+	background-color: #6b77e5;
+	color: #fff;
+}
+.consulting02-link:hover {
+	background-color: #40ddb6;
+	color: #6b77e5;
+	outline: 1px solid #6b77e5;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ====================Consulting03============================ */
+.consulting03 {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.consulting03-upper-content {
+	text-align: center;
+	margin-bottom: 41px;
+}
+.consulting03-label {
+	color: #37393f;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.consulting03-label::before {
+	content: "";
+	background: url("../img/consulting_03/consulting_box.svg") 0 0 no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 6px;
+}
+.consulting03-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 41px;
+}
+.consulting03-row {
+	font-size: 0px;
+}
+.consulting03-row-item {
+	max-width: 386px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 31px;
+	opacity: 0.8;
+}
+.consulting03-row-item:hover {
+	opacity: 1;
+}
+.consulting03-row-item:last-child {
+	margin-right: 0px;
+}
+.consulting03-row-item::before {
+	content: "";
+	width: 72px;
+	height: 72px;
+	display: inline-block;
+	margin-bottom: -36px;
+}
+.consulting03-row-item:nth-child(1)::before {
+	background: url("../img/consulting_03/icon1.svg") 0 0 no-repeat;
+}
+.consulting03-row-item:nth-child(2)::before {
+	background: url("../img/consulting_03/icon2.svg") 0 0 no-repeat;
+}
+.consulting03-row-item:nth-child(3)::before {
+	background: url("../img/consulting_03/icon3.svg") 0 0 no-repeat;
+}
+.consulting03-item-content {
+	padding: 58px 43px;
+	background-color: #f4f4f4;
+}
+.consulting03-item-subtitle {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+.consulting03-item-text p {
+	font-size: 18px;
+	line-height: 1.46;
+	margin-bottom: 37px;
+}
+.consulting03-item-link {
+	display: inline-block;
+	color: #6b77e5;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.consulting03-item-link:hover {
+	text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ===================Jewellery01==================== */
+.jewellery01 {
+	max-width: 1245px;
+	margin: 0 auto;
+	padding: 50px 15px;
+	color: #000;
+	font-family: Cormorant Infant;
+	font-weight: 700;
+	font-size: 0px;
+}
+.jewellery01-content {
+	display: inline-block;
+	max-width: 470px;
+	margin-right: 5px;
+	vertical-align: top;
+	padding-top: 140px;
+}
+.jewellery01-title {
+	font-size: 60px;
+	line-height: 1.15;
+	text-transform: capitalize;
+	margin-bottom: 13px;
+}
+.jewellery01-title-line::after {
+	content: "";
+	height: 3px;
+	width: 66%;
+	background-color: #78473b;
+	display: block;
+}
+.jewellery01-images-block {
+	display: inline-block;
+	max-width: 740px;
+	font-size: 0px;
+	width: 100%;
+}
+.jewellery01-image-block {
+	max-width: 344px;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 45px;
+}
+.jewellery01-image-block:first-child {
+	padding-top: 40px;
+}
+.jewellery01-image-block:last-child {
+	margin-right: 0px;
+}
+.jewellery01-image-link {
+	opacity: 0.9;
+}
+.jewellery01-image-link:hover {
+	opacity: 1;
+}
+.jewellery01-image {
+	margin-bottom: 25px;
+	padding-left: 10px;
+}
+.jewellery01-image img {
+	box-shadow:
+		-9px -10px 0px 0px #fff,
+		-9px -10px 0px 1px #000;
+}
+.jewellery01-text {
+	font-size: 24px;
+	line-height: 1.44;
+}
+.jewellery01-text:hover {
+	text-decoration: underline;
+}
+.jewellery01-text > *:not(:last-child) {
+	margin-bottom: 4px;
+}
+.jewellery01-image-subtitle {
+	font-size: 46px;
+	line-height: 1.13;
+	max-width: 334px;
+	margin-bottom: 40px;
+	text-transform: lowercase;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ==================Game01==================== */
+.game01 {
+	max-width: 910px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.game01-title {
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.game01-text {
+	width: 200px;
+	height: 60px;
+	padding: 20px 20px;
+	border: 1px solid #000;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.game {
+	min-height: 600px;
+}
+.game-line {
+	background-color: orange;
+	border-radius: 50%;
+}
+.game-line-1 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-2 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-3 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-4 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-5 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-6 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-7 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-8 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-9 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-text {
+	opacity: 0;
+	font-size: 40px;
+	font-weight: 600;
+}
+.game01-text:hover + .game-line-1 {
+	opacity: 1;
+}
+.game-line-1:hover + .game-line-2 {
+	opacity: 1;
+}
+.game-line-2:hover + .game-line-3 {
+	opacity: 1;
+}
+.game-line-3:hover + .game-line-4 {
+	opacity: 1;
+}
+.game-line-4:hover + .game-line-5 {
+	opacity: 1;
+}
+.game-line-5:hover + .game-line-6 {
+	opacity: 1;
+}
+.game-line-6:hover + .game-line-7 {
+	opacity: 1;
+}
+.game-line-7:hover + .game-line-8 {
+	opacity: 1;
+}
+.game-line-8:hover + .game-line-9 {
+	opacity: 1;
+}
+.game-line-9:hover + .game-text {
+	opacity: 1;
+}
+.game-text:hover {
+	opacity: 1;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ==============================Footer============================= */
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+}
+.list {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #cecece;
+	/* height: 100px; */
+}
+.list-item {
+	margin-bottom: 20px;
+}
+.list-item:last-child {
+	margin-bottom: 0px;
+}
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+	align-items: center;
+}
+.item-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.item-link:hover {
+	text-decoration: underline;
+}
