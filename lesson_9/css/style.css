@@ -540,6 +540,7 @@ body {
 	height: 72px;
 	display: inline-block;
 	margin-bottom: -36px;
+	border-radius: 50%;
 }
 .consulting03-row-item:nth-child(1)::before {
 	background: url("../img/consulting_03/icon1.svg") 0 0 no-repeat;
