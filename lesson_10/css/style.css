@@ -1,0 +1,86 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	/* padding: 50px 15px; */
+}
+.header {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 25px;
+	background-color: #cecece;
+	padding: 15px 0px;
+}
+.header-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.header-list-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.header-list-link:hover {
+	text-decoration: underline;
+	text-shadow: 5px 6px 7px #957a7a;
+}
+
+/* ====================Практика уроку===================== */
+main {
+	background-color: #e2e1e1;
+	padding: 50px;
+}
+main > div:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+h2:not(:last-child) {
+	margin-bottom: 20px;
+}
+p:not(:last-child) {
+	margin-bottom: 15px;
+}
+img {
+	vertical-align: middle;
+	max-width: 700px;
+}
+/* ------------------------------------------------------------------ */
+
+/* ==============================Footer============================= */
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+}
+.list {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #cecece;
+	/* height: 100px; */
+}
+.list-item {
+	margin-bottom: 20px;
+}
+.list-item:last-child {
+	margin-bottom: 0px;
+}
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+	align-items: center;
+}
+.item-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.item-link:hover {
+	text-decoration: underline;
+	text-shadow: 5px 6px 7px #957a7a;
+}
