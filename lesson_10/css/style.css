@@ -39,7 +39,9 @@ main {
 main > div:not(:last-child) {
 	margin-bottom: 50px;
 }
-
+h2 {
+	font-weight: 600;
+}
 h2:not(:last-child) {
 	margin-bottom: 20px;
 }
