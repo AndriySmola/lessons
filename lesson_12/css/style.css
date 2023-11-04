@@ -1,0 +1,555 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі, практика уроку теорія, дз */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	/* color: #7d7d7d; */
+	/* color: #fff; */
+	color: black;
+}
+.wrapper {
+	/* overflow: hidden; */
+	overflow: clip;
+	min-height: 100%;
+}
+.box01 {
+	/* position: relative; */
+	/* border: 3px solid #000; */
+	/* z-index: 1; */
+	/* background-color: rgb(190, 169, 137); */
+}
+.box02 {
+	/* position: relative; */
+	/* border: 3px solid #000; */
+	/* padding: 15px; */
+	/* background-color: rgb(181, 142, 69); */
+	/* z-index: 2; */
+}
+.block01,
+.block02,
+.block03 {
+	/* padding: 25px; */
+	/* text-transform: uppercase; */
+	/* text-align: center; */
+}
+.block01 {
+	/* background-color: #7a956b; */
+}
+.block02 {
+	/* background-color: #794f45; */
+}
+.block03 {
+	/* background-color: #77608b; */
+}
+/* ====================Практика уроку теорія===================== */
+
+/* ============ css властивість position ============== */
+
+/* ===========relative========== */
+/* .block01 {
+}
+.block02 {
+	position: relative;
+	bottom: -20px;
+	right: -20px;
+}
+.block03 {
+	position: relative;
+	top: 30px;
+	left: 30px;
+} */
+/* ------------relative відсотки----------- */
+main {
+	/* не працює з min-height */
+	/* min-height: 300px; */
+	/* height: 300px;  */
+}
+.block01 {
+}
+.block02 {
+	/* position: relative; */
+	/* left: 50%; */
+	/* top: 10%; */
+}
+.block03 {
+}
+/* ------------relative z-index----------- */
+/* .block01 {
+	position: relative;
+	top: 60px;
+	left: 60px;
+	z-index: 3;
+}
+.block02 {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	z-index: 2;
+}
+.block03 {
+	position: relative;
+	z-index: 1;
+} */
+/* ------------relative z-index 2х батьківських елемента між собою----------- */
+/* .box01 {
+	position: relative;
+	z-index: 1;
+}
+.box02 {
+	position: relative;
+	z-index: 2;
+}
+.block01 {
+	position: relative;
+	top: 60px;
+	left: 60px;
+	z-index: 3;
+}
+.block02 {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	z-index: 2;
+}
+.block03 {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	z-index: 50;
+} */
+/* ------------------------------------------------------------------ */
+
+/* ===========position absolute========== */
+/* .box01 {
+	position: relative;
+}
+.block01 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.block02 {
+}
+.block03 {
+	position: relative;
+	z-index: 1;
+} */
+/* --------------position absolute у відсотках------------- */
+/* .box01 {
+	position: relative;
+}
+.block01 {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+.block02 {
+}
+.block03 {
+} */
+/* ------------------------------------------------------------------ */
+
+/* ===========position fixed========== */
+.box01 {
+	/* position: relative; */
+}
+/* .block01 {
+	position: fixed;
+	top: 5%;
+	left: 0;
+	width: 100%;
+}
+.block02 {
+}
+.block03 {
+} */
+/* ------------------------------------------------------------------ */
+
+/* ===========position sticky========== */
+/* .block01 {
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.block02 {
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.block03 {
+	position: sticky;
+	top: 0;
+	left: 0;
+} */
+/* ------------------------------------------------------------------ */
+
+/* ====================Практика на уроку===================== */
+/* [class*="__container"] {
+	max-width: 830px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.header {
+	background-color: darkgrey;
+	padding: 15px;
+}
+.header--fix {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.menu {
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+}
+.menu__link {
+	background-color: #a9835b;
+	padding: 10px;
+	display: inline-block;
+}
+.menu__item:hover .menu__link {
+	background-color: #aa5f0f;
+}
+.menu__item:hover .submenu {
+	visibility: visible;
+} */
+/* ------------підпункти в меню хедер------------ */
+/* .submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+	width: 120px;
+	visibility: hidden;
+}
+.submenu__item {
+	background-color: yellowgreen;
+}
+.submenu__link {
+	display: inline-block;
+	padding: 10px;
+}
+.submenu__link:hover {
+	text-decoration: underline;
+} */
+/* ---------------------------------------------- */
+/* .page {
+	padding-top: 68px;
+	padding-bottom: 100px;
+}
+.page__container {
+	font-size: 0;
+}
+.side {
+	position: sticky;
+	top: 68px;
+	font-size: 18px;
+	display: inline-block;
+	width: 200px;
+	padding: 15px;
+	background-color: rgb(186, 186, 163);
+	vertical-align: top;
+}
+.side__menu {
+}
+.menu-side {
+}
+.menu-side__item {
+	position: relative;
+}
+.menu-side__item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.menu-side__link {
+	background-color: #a9835b;
+	display: block;
+	padding: 10px 10px 10px 35px;
+	position: relative;
+}
+.menu-side__link::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: yellow;
+	position: absolute;
+	left: 9px;
+	top: 11px;
+}
+.menu-side__item:hover .menu-side__link {
+	background-color: #aa5f0f;
+}
+.menu-side__item:hover .submenu-side {
+	visibility: visible;
+} */
+/* ------------підпункти в меню side------------ */
+/* .submenu-side {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding-left: 5px;
+	visibility: hidden;
+	width: 100%;
+}
+.submenu-side__item {
+	background-color: yellowgreen;
+}
+.submenu-side__link {
+	display: block;
+	padding: 10px;
+}
+.submenu-side__link:hover {
+	text-decoration: underline;
+} */
+/* ---------------------------------------------- */
+/* .content {
+	font-size: 18px;
+	display: inline-block;
+	width: 600px;
+	padding: 15px;
+	background-color: rgb(227, 191, 136);
+}
+.body:not(:last-child) {
+	margin-bottom: 30px;
+}
+.text {
+	font-size: 18px;
+	line-height: 120%;
+} */
+
+/* ------------------------------------------------------------------ */
+
+/* ==============HW============== */
+[class*="__container"] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+/* ==============Header============== */
+.header {
+	background-color: #d4c4c4;
+	padding: 15px;
+	text-align: right;
+}
+.header--fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.menu {
+	font-size: 0;
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.menu__item:not(:last-child) {
+	margin-right: 5px;
+}
+.menu__link {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #a9835b;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 10px;
+}
+.menu__item:hover .menu__link {
+	text-decoration: underline;
+	background-color: #aa5f0f;
+	border-radius: 10px;
+}
+.menu__item:hover .submenu {
+	visibility: visible;
+}
+.submenu {
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+	visibility: hidden;
+	width: 110px;
+}
+.submenu--absolute {
+	position: absolute;
+}
+.submenu__item {
+	position: relative;
+	background-color: yellowgreen;
+	border-radius: 10px;
+	text-align: center;
+}
+.submenu__item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.submenu__link {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px;
+	display: block;
+}
+.submenu__item:hover .submenu__link {
+	background-color: yellow;
+	text-decoration: underline;
+	border-radius: 10px;
+}
+.submenu__item:hover .sub-submenu {
+	visibility: visible;
+}
+.sub-submenu {
+	top: 0;
+	left: 100%;
+	padding-left: 5px;
+	width: 155px;
+	visibility: hidden;
+}
+.sub-submenu--absolute {
+	position: absolute;
+}
+.sub-submenu__item {
+	background-color: lightgreen;
+	border-radius: 10px;
+	text-align: center;
+}
+.sub-submenu__item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.sub-submenu__item:hover .sub-submenu__link {
+	background-color: rgb(40, 150, 40);
+	text-decoration: underline;
+	border-radius: 10px;
+}
+.sub-submenu__link {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px;
+	display: block;
+}
+
+/* ==============Main============== */
+/* -----------Sticky boxes----------- */
+.box__block01,
+.box__block02 {
+	padding: 100px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.box__block01 {
+	background-color: #77608b;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.box__block02 {
+	background-color: #794f45;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.page__box {
+	padding-top: 80px;
+	margin-bottom: 50px;
+}
+.box__text {
+	padding: 15px 0;
+}
+.box__text p:not(:last-child) {
+	margin: 0 0 15px 0;
+}
+/* -----------Row images----------- */
+.page__row {
+	margin-bottom: 50px;
+}
+.row-page {
+	font-size: 0;
+}
+.row-page__styles:not(:last-child) {
+	margin-bottom: 31px;
+}
+.item {
+	display: inline-block;
+	position: relative;
+}
+.item--styles:not(:last-child) {
+	margin-right: 31px;
+}
+.item__image {
+}
+.item__image img {
+	max-width: 386px;
+	width: 100%;
+}
+.item__social {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(107, 119, 229, 0.7);
+	padding: 241px 107px;
+	visibility: hidden;
+}
+.social-item {
+}
+.item:hover .social-item {
+	visibility: visible;
+}
+.social-item__link img {
+	max-width: 50px;
+}
+.social-item__link:not(:last-child) {
+	margin-right: 13px;
+}
+.social-item__link:hover {
+	transform: scale(1.1);
+}
+.item__content {
+	max-width: 341px;
+	width: 100%;
+	padding: 24px 47px;
+	background-color: #fff;
+	text-align: center;
+	position: absolute;
+	right: 23px;
+	bottom: 22px;
+}
+.item__title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 4px;
+}
+.item__label {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 1.35;
+}
+/* ==============================Footer============================= */
+.footer {
+	background-color: #d4c4c4;
+	padding: 20px;
+	text-align: center;
+}
+.footer__title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}
