@@ -1,0 +1,222 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі, практика уроку теорія, дз */
+body {
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	/* padding: 50px; */
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* ==============HW============== */
+
+/* ==============================Header============================ */
+
+/* ==============================Main============================== */
+/* -----------Theory----------- */
+/* Flex container */
+.block {
+	/* background-color: #794f45; */
+	/* border: 5px solid red; */
+	/* height: 100px; */
+
+	/* блок властивостей для FLEX контейнера */
+	/* властивість display */
+	/* display: flex; */
+	/* властивість flex-wrap */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+	/* властивість justify-content */
+
+	/* перша група властивостей justify-content визначає вирівнювання елементів вздовж основної осі */
+	/* justify-content: flex-start; */
+	/* 2га група властивостей justify-content керує вільним простором вздовж основної осі */
+	/* justify-content: space-evenly; */
+
+	/* властивість align-items */
+	/* align-items: stretch; за замовченням, вказувати не треба */
+
+	/* властивість flex-direction */
+	/* flex-direction: row-reverse; */
+
+	/* властивість gap */
+	/* загальний відступ */
+	/* gap: 20px; */
+	/* відступ між колонками та рядками */
+	/* column-gap: 10px; */
+	/* row-gap: 50px; */
+}
+
+/* Flex element */
+.block__item {
+	/* font-size: 15px; */
+	/* font-weight: 700; */
+	/* background-color: #7a956b; */
+	/* padding: 20px; */
+	/* text-align: center; */
+	/* border: 5px solid #77608d; */
+
+	/* FLEX-елемент може бути одночасно і FLEX-контейнером */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+
+	/* блок властивостей для FLEX elementів */
+
+	/* властивість align-self */
+	/* align-self */
+
+	/* flex-grow: 1; */
+	/* flex-shrink: 1; */
+	/* flex-basis: 33, 333%; */
+}
+.block__item:nth-child(1) {
+	/* align-self: flex-start; */
+	/* order: 4; */
+}
+/* група властивостей (flex-grow; flex-shrink; flex-basis) */
+.block__item:nth-child(2) {
+	/* flex-grow: 0; */
+	/* flex-shrink: 1; */
+	/* flex-basis: 200px; */
+	/* чи універсальний запис */
+	/* flex: 0 1 200px; */
+	/*flex: 0 1 auto; за замовченням */
+	/* order: 5; */
+}
+.block__item:nth-child(3) {
+	/* order: 2; */
+}
+.block__item:nth-child(4) {
+	/* order: 1; */
+}
+.block__item:nth-child(5) {
+	/* order: 3; */
+}
+
+/* -----------Practice----------- */
+
+/* відсотковий basis та фіксований (у пікселях) gap */
+.container {
+	/* max-width: 800px; */
+	/* margin: 0 auto; */
+	/* overflow: hidden; */
+	/* padding-top: 50px; */
+	/* padding-bottom: 50px; */
+	/* background-color: #66666670; */
+}
+.columns-gap {
+	/* background-color: brown; */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	/* margin: 0px -10px -20px -10px; */
+}
+.columns-gap__column {
+	/* background-color: fuchsia; */
+	/* padding: 0px 10px 20px 10px; */
+	/* flex-basis: 33.333%; */
+	/* flex-grow: 1; */
+	/* flex-shrink: 1; */
+}
+.columns-gap__item {
+	/* background-color: green; */
+	/* padding: 20px; */
+}
+
+/* =================прибиття футеру до низу екрану================= */
+.header {
+	background-color: violet;
+	padding: 15px;
+	text-align: center;
+}
+.page {
+	/* background-color: rgba(56, 20, 20, 0.486); */
+	/* flex-grow: 1; */
+}
+.footer {
+	background-color: green;
+	padding: 15px;
+	text-align: center;
+}
+/* ------------картки товарів------------- */
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.page {
+}
+.page__container {
+}
+.products {
+	padding: 50px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -25px;
+}
+.products__column {
+	padding: 0px 25px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 25%;
+	margin-bottom: 50px;
+}
+.products__item {
+}
+.item-product {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.item-product__image {
+	border-radius: 10px;
+	overflow: hidden;
+}
+.item-product__image img {
+	max-width: 100%;
+}
+.item-product__image:not(:last-child) {
+	margin-bottom: 15px;
+}
+.item-product__body {
+	display: flex;
+	flex-grow: 1;
+}
+.item-product__content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.item-product__tiitle {
+	flex-grow: 1;
+}
+.item-product__tiitle:not(:last-child) {
+	margin-bottom: 10px;
+}
+.item-product__link-title {
+}
+.item-product__label {
+}
+.item-product__link {
+	align-self: flex-start;
+	min-height: 14px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 18px;
+	background: url(../img/cards/right-arrow.svg) center no-repeat;
+}
+/* ==============================Footer============================ */
