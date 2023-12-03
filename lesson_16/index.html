@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h2 class="header__title">Home Work for the Lesson 16</h2>
+		</header>
+		<main class="page">
+			<!-- Request A Call Back ! -->
+			<div class="page__consulting consulting">
+				<div class="consulting__container">
+					<div class="consulting__label">Contact Us</div>
+					<h2 class="consulting__title">Request A Call Back !</h2>
+					<form action="#" class="consulting__form form-consulting" enctype="multipart/form-data" method="GET">
+						<div class="form-consulting__body">
+							<div class="form-consulting__item">
+								<input class="form-consulting__input" type="text" autocomplete="off" name="name" required
+									placeholder="Your Name">
+							</div>
+							<div class="form-consulting__item">
+								<input class="form-consulting__input" type="email" required autocomplete="off" name="email"
+									placeholder="Email Address">
+							</div>
+							<div class="form-consulting__item">
+								<input class="form-consulting__input" type="tel" autocomplete="off" name="phone"
+									placeholder="Phone Number">
+							</div>
+							<div class="form-consulting__item">
+								<input class="form-consulting__input" type="text" autocomplete="off" name="subject"
+									placeholder="Subject">
+							</div>
+							<div class="form-consulting__item form-consulting__item--texterea">
+								<textarea class="form-consulting__input form-consulting__input--texterea" name="message"
+									placeholder="Message..." autocomplete="off"></textarea>
+							</div>
+						</div>
+						<button class="form-consulting__botton" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+			<!-- Euphoria My Info -->
+			<div class="page__info info">
+				<div class="info__container">
+					<h2 class="info__title">My Info</h2>
+					<div class="info__label">Add Address</div>
+					<form action="#" class="info__form form-info" enctype="multipart/form-data" method="POST">
+						<div class="form-info__body">
+							<div class="form-info__item">
+								<label class="form-info__label" for="first-name">First Name*</label>
+								<input type="text" class="form-info__input" id="first-name" autocomplete="off" required
+									name="first-name" placeholder="First Name" tabindex="1">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="last-name">Last Name*</label>
+								<input type="text" class="form-info__input" id="last-name" autocomplete="off" required
+									name="last-name" placeholder="Last Name" tabindex="2">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="country">Country / Region*</label>
+								<input type="text" class="form-info__input" id="country" autocomplete="off" required
+									name="country" placeholder="Country / Region" tabindex="3">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="company-name">Company Name</label>
+								<input type="text" class="form-info__input" id="company-name" autocomplete="off"
+									name="company-name" placeholder="Company (optional)" tabindex="4">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="street-address">Street Address*</label>
+								<input type="text" class="form-info__input" id="street-address" autocomplete="off" required
+									name="street-address" placeholder="House number and street name" tabindex="5">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="apartment">Apt, suite, unit</label>
+								<input type="text" class="form-info__input" id="apartment" autocomplete="off" name="apartment"
+									placeholder="apartment, suite, unit, etc. (optional)" tabindex="6">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="city">City*</label>
+								<input type="text" class="form-info__input" id="city" autocomplete="off" required name="city"
+									placeholder="Town / City" tabindex="7">
+							</div>
+							<!-- Select -->
+							<div class="form-info__item">
+								<label class="form-info__label" for="state">State*</label>
+								<select class="form-info__input" name="state" id="state" required tabindex="8">
+									<option selected value="">State</option>
+									<option value="State01">State01</option>
+									<option value="State02">State02</option>
+									<option value="State03">State03</option>
+								</select>
+							</div>
+							<!--  -->
+							<div class="form-info__item">
+								<label class="form-info__label" for="phone">Phone*</label>
+								<input type="tel" class="form-info__input" id="phone" autocomplete="off" required name="phone"
+									placeholder="Phone" tabindex="9">
+							</div>
+							<div class="form-info__item">
+								<label class="form-info__label" for="postal-code">Postal Code*</label>
+								<input type="text" class="form-info__input" id="postal-code" autocomplete="off" required
+									name="postal-code" placeholder="Postal Code" tabindex="10">
+							</div>
+							<div class="form-info__item form-info__item--textarea">
+								<label class="form-info__label " for="instruction">Delivery
+									Instruction</label>
+								<textarea class="form-info__input form-info__input--textarea" name="instruction"
+									id="instruction" placeholder="Delivery Instruction"></textarea>
+							</div>
+						</div>
+						<div class="form-info__checkbox checkbox-info">
+							<div class="checkbox-info__item">
+								<input class="checkbox-info__input" checked type="checkbox" id="check1" name="check1">
+								<label class="checkbox-info__label" for="check1">Set as default shipping address</label>
+							</div>
+							<div class="checkbox-info__item">
+								<input class="checkbox-info__input" type="checkbox" id="check2" name="check2">
+								<label class="checkbox-info__label" for="check2">Set as default billing address</label>
+							</div>
+						</div>
+						<div class="form-info__actions">
+							<button class="form-info__button" type="submit">Save</button>
+							<button class="form-info__button form-info__button--grey" type="reset">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Check Out -->
+			<div class="page__check check">
+				<div class="check__container">
+					<div class="check__title-block block-title">
+						<h2 class="block-title__title">Check Out</h2>
+						<h3 class="block-title__subtitle check-subtitle">Billing Details</h3>
+					</div>
+					<div class="check__section">
+						<form action="#" class="check__details details-form" enctype="multipart/form-data" method="POST">
+							<div class="details-form__body">
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-first-name">First Name*</label>
+									<input type="text" class="details-form__input" id="check-first-name" autocomplete="off"
+										required name="check-first-name" placeholder="First Name" tabindex="1">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-last-name">Last Name*</label>
+									<input type="text" class="details-form__input" id="check-last-name" autocomplete="off"
+										required name="check-last-name" placeholder="Last Name" tabindex="2">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-country">Country / Region*</label>
+									<input type="text" class="details-form__input" id="check-country" autocomplete="off" required
+										name="check-country" placeholder="Country / Region" tabindex="3">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-company">Company Name</label>
+									<input type="text" class="details-form__input" id="check-company" autocomplete="off"
+										name="check-company" placeholder="Company (optional)" tabindex="4">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-address">Street Address*</label>
+									<input type="text" class="details-form__input" id="check-address" autocomplete="off" required
+										name="check-address" placeholder="House number and street name" tabindex="5">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-apartment">Apt, suite, unit</label>
+									<input type="text" class="details-form__input" id="check-apartment" autocomplete="off"
+										name="check-apartment" placeholder="apartment, suite, unit, etc. (optional)" tabindex="6">
+								</div>
+								<div class="details-form__item details-form__item--three-items-row">
+									<label class="details-form__label" for="check-city">City*</label>
+									<input type="text" class="details-form__input" id="check-city" autocomplete="off" required
+										name="check-city" placeholder="Town / City" tabindex="7">
+								</div>
+								<!-- Select -->
+								<div class="details-form__item details-form__item--three-items-row">
+									<label class="details-form__label" for="check-state">State*</label>
+									<select class="details-form__input" name="check-state" id="check-state" required
+										tabindex="8">
+										<option selected value="">State</option>
+										<option value="State01">State01</option>
+										<option value="State02">State02</option>
+										<option value="State03">State03</option>
+									</select>
+								</div>
+								<!--  -->
+								<div class="details-form__item details-form__item--three-items-row">
+									<label class="details-form__label" for="check-postal">Postal Code*</label>
+									<input type="text" class="details-form__input" id="check-postal" autocomplete="off" required
+										name="check-postal" placeholder="Postal Code" tabindex="9">
+								</div>
+								<div class="details-form__item">
+									<label class="details-form__label" for="check-phone">Phone*</label>
+									<input type="tel" class="details-form__input" id="check-phone" autocomplete="off" required
+										name="check-phone" placeholder="Phone" tabindex="10">
+								</div>
+							</div>
+							<button class="details-form__button check-button" type="submit">Continue to delivery</button>
+							<div class="details-form__checkbox check-checkbox">
+								<div class="check-checkbox__item">
+									<input type="checkbox" checked class="check-checkbox__input" id="check-checkbox"
+										name="check-checkbox">
+									<label for="check-checkbox" class="check-checkbox__label">Save my information for a faster
+										checkout</label>
+								</div>
+							</div>
+						</form>
+						<!-- shipping-form -->
+						<form action="#" class="check__shipping shipping-form" enctype="multipart/form-data" method="POST">
+							<div class="shipping-form__body">
+								<div class="shipping-form__item item-shipping">
+									<div class="item-shipping__title-block">
+										<h3 class="item-shipping__subtitle check-subtitle">Shipping Address</h3>
+										<div class="item-shipping__text">
+											<p>Select the address that matches your card or payment method.</p>
+										</div>
+									</div>
+									<div class="item-shipping__body">
+										<div class="item-shipping__row">
+											<input type="radio" class="item-shipping__input" id="same" name="shipping-address"
+												value="billing-address">
+											<label for="same" class="item-shipping__label">Same as Billing
+												address</label>
+										</div>
+										<div class="item-shipping__row">
+											<input type="radio" class="item-shipping__input" id="use" name="shipping-address"
+												value="shipping-address">
+											<label for="use" class="item-shipping__label">Use a different shipping
+												address</label>
+										</div>
+									</div>
+								</div>
+								<div class="shipping-form__item item-shipping">
+									<div class="item-shipping__title-block">
+										<h3 class="item-shipping__subtitle check-subtitle">Shipping Method</h3>
+									</div>
+									<div class="item-shipping__body">
+										<div class="item-shipping__row">
+											<div class="item-shipping__arrives">
+												<p>Arrives by Monday, June 7</p>
+											</div>
+										</div>
+										<div class="item-shipping__row">
+											<div class="item-shipping__row-description">
+												<div class="item-shipping__charges">
+													<p>Delivery Charges</p>
+													<p>$5.00</p>
+												</div>
+												<div class="item-shipping__fees">
+													<p>Additional fees may apply</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="shipping-form__item item-shipping">
+									<div class="item-shipping__title-block">
+										<h3 class="item-shipping__subtitle check-subtitle">Payment Method</h3>
+										<div class="item-shipping__text">
+											<p>All transactions are secure and encrypted.</p>
+										</div>
+									</div>
+									<div class="item-shipping__body item-shipping__body--payment-method">
+										<div class="item-shipping__row item-shipping__row--container">
+											<div class="item-shipping__card">
+												<input type="radio" id="card" name="payment-method" value="card"
+													class="item-shipping__card-input">
+												<label for="card" class="item-shipping__card-label">Credit Card</label>
+												<p>We accept all major credit cards.</p>
+											</div>
+											<div class="item-shipping__row-content content-row">
+												<div class="content-row__logo">
+													<div class="content-row__item"><img src="img/check-out/gpay.svg"
+															alt="google-pay"></div>
+													<div class="content-row__item"><img src="img/check-out/visa.svg" alt="visa">
+													</div>
+													<div class="content-row__item"><img src="img/check-out/paypal.svg" alt="paypal">
+													</div>
+													<div class="content-row__item"><img src="img/check-out/paypass.svg"
+															alt="paypass"></div>
+												</div>
+												<div class="content-row__form form-row">
+													<div class="form-row__item">
+														<input type="text" class="form-row__input" required placeholder="Card number"
+															name="card-number">
+													</div>
+													<div class="form-row__item">
+														<input type="text" class="form-row__input" required placeholder="Name of card"
+															name="card-name">
+													</div>
+													<div class="form-row__item">
+														<input type="text" class="form-row__input" required
+															placeholder="Expiration date (MM/YY)" name="card-date">
+													</div>
+													<div class="form-row__item">
+														<input type="password" class="form-row__input form-row__input--code" required
+															placeholder="Security Code" name="card-code">
+														<button type="button" class="form-row__button"></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item-shipping__row">
+											<div class="item-shipping__card">
+												<input type="radio" id="cash" name="payment-method" value="cash"
+													class="item-shipping__card-input">
+												<label for="cash" class="item-shipping__card-label">Cash on
+													delivery</label>
+												<p>Pay with cash upon delivery.</p>
+											</div>
+										</div>
+										<div class="item-shipping__row">
+											<div class="item-shipping__card">
+												<input type="radio" id="paypol" name="payment-method" value="paypol"
+													class="item-shipping__card-input">
+												<label for="paypol" class="item-shipping__card-label">Paypol</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="shipping-form__button check-button" type="submit">Pay Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<h4 class="footer__title">Home Work for the Lesson 16</h4>
+		</footer>
+	</div>
+
+</body>
+
+</html>

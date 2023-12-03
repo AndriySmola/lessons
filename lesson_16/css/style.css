@@ -1,0 +1,688 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
+/* Підключення шрифтів вручну */
+@import url("fonts.css");
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #ffffff;
+	font-family: "Causten", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	color: #333;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+/* ==============Header============== */
+.header {
+	background-color: #ebe0e0;
+	padding: 15px 0px;
+	text-align: center;
+}
+.header__title {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Request A Call Back ! */
+.consulting__label {
+	color: #37393f;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	line-height: 1.22;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	gap: 6px;
+}
+.consulting__label:not(:last-child) {
+	margin-bottom: 16px;
+}
+.consulting__label::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+	flex: 0 0 12px;
+}
+.consulting__title {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.consulting__title:not(:last-child) {
+	margin-bottom: 40px;
+}
+.consulting__form {
+	text-align: center;
+}
+.form-consulting__body {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 28px;
+	margin: 0px -17.5px;
+}
+.form-consulting__body:not(:last-child) {
+	margin-bottom: 50px;
+}
+.form-consulting__item {
+	flex: 1 1 50%;
+	padding: 0px 17.5px;
+	min-width: 300px;
+}
+.form-consulting__input {
+	width: 100%;
+	height: 65px;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+	padding: 21px 40px;
+	cursor: pointer;
+}
+.form-consulting__item--texterea {
+	flex: 1 1 100%;
+}
+.form-consulting__input--texterea {
+	resize: vertical;
+	height: 222px;
+}
+.form-consulting__input::placeholder {
+	color: #37393f;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.22;
+	transition: all 0.4s;
+}
+.form-consulting__input:focus {
+	outline: 1px solid #40ddb6;
+}
+.form-consulting__input:focus::placeholder {
+	opacity: 0;
+}
+
+.form-consulting__botton {
+	background-color: #6b77e5;
+	padding: 21px 61px;
+	color: #ffffff;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	line-height: 1.22;
+	transition: background-color 0.4s;
+}
+.form-consulting__botton:hover {
+	color: #40ddb6;
+	background-color: #303ebb;
+}
+
+/* Euphoria My Info */
+.info__container {
+	max-width: 925px;
+}
+.info__title {
+	color: #3c4242;
+	font-family: "Coresansc", sans-serif;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+}
+.info__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+.info__label {
+	color: #3c4242;
+	font-family: "Coresansc", sans-serif;
+	font-size: 22px;
+	line-height: 1.5;
+	letter-spacing: 0.44px;
+}
+.info__label:not(:last-child) {
+	margin-bottom: 50px;
+}
+.form-info__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -21px;
+	row-gap: 28px;
+}
+.form-info__body:not(:last-child) {
+	margin-bottom: 30px;
+}
+.form-info__item {
+	flex: 1 1 50%;
+	padding: 0px 21px;
+	min-width: 213px;
+}
+.form-info__item select {
+	font-size: 16px;
+	color: #807d7e;
+	font-family: "Causten", sans-serif;
+}
+.form-info__label {
+	display: block;
+	color: #3c4242;
+	line-height: 1.22;
+	letter-spacing: 0.36px;
+	margin-bottom: 10px;
+}
+.form-info__input {
+	padding: 18px 22px;
+	background-color: #f6f6f6;
+	border-radius: 8px;
+	width: 100%;
+	height: 55px;
+}
+.form-info__label,
+.form-info__input {
+	cursor: pointer;
+}
+.form-info__input::placeholder {
+	font-size: 16px;
+	color: #807d7e;
+	transition: opacity 0.4s;
+}
+.form-info__input:focus {
+	outline: 1px solid #8a33fd;
+}
+.form-info__input:focus::placeholder {
+	opacity: 0;
+}
+.form-info__item--textarea {
+	flex: 1 1 100%;
+}
+.form-info__input--textarea {
+	resize: vertical;
+	height: 150px;
+}
+.form-info__checkbox:not(:last-child) {
+	margin-bottom: 58px;
+}
+.checkbox-info__item {
+	position: relative;
+}
+.checkbox-info__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+.checkbox-info__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+/* Псевдоклас стану "в фокусі по TAB" */
+.checkbox-info__input:focus-visible + .checkbox-info__label {
+	outline: 1px solid #8a33fd;
+}
+
+/* Псевдоклас стану "вибраний" */
+.checkbox-info__input:checked + .checkbox-info__label::before {
+	background: url("../img/my-info/down-arrow.svg") center/25px no-repeat;
+}
+
+.checkbox-info__label {
+	color: #3c4242;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	display: inline-flex;
+	gap: 11px;
+	cursor: pointer;
+	align-items: center;
+}
+.checkbox-info__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	flex: 0 0 20px;
+	border: 2px solid #bebcbd;
+}
+.form-info__actions {
+	display: inline-flex;
+	column-gap: 30px;
+}
+.form-info__button {
+	flex: 0 0 125px;
+	padding: 12px 40px;
+	border-radius: 8px;
+	background-color: #8a33fd;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 600;
+	transition: all 0.3s;
+}
+.form-info__button:hover {
+	background-color: #303ebb;
+}
+.form-info__button--grey {
+	flex: 0 0 141px;
+	background-color: #f6f6f6;
+	color: #807d7e;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.form-info__button--grey:hover {
+	background-color: #807d7e;
+	color: #f6f6f6;
+}
+
+/* Check Out */
+/* ------------ */
+.check-subtitle {
+	color: #3c4242;
+	font-family: "Coresansc", sans-serif;
+	font-size: 22px;
+	line-height: 1.52;
+	letter-spacing: 0.44px;
+}
+.check-button {
+	padding: 16px 20px;
+	border-radius: 8px;
+	background-color: #8a33fd;
+	color: #fff;
+	font-weight: 500;
+	transition: background-color 0.3s;
+}
+/* ------------ */
+
+.check__container {
+	max-width: 870px;
+}
+.check__title-block:not(:last-child) {
+	margin-bottom: 50px;
+}
+.block-title__title {
+	display: inline-flex;
+	gap: 15px;
+	color: #3c4242;
+	font-family: "Coresansc", sans-serif;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+}
+.block-title__title::before {
+	content: "";
+	flex: 0 0 6px;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background-color: #8a33fd;
+}
+.block-title__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+.block-title__subtitle {
+}
+
+.check__section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 60px;
+}
+.check__details {
+	position: relative;
+}
+.check__details::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	height: 1px;
+	width: 100%;
+	background-color: #edeef2;
+}
+.details-form {
+	padding: 0px 38px 0px 0px;
+}
+.details-form__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -19px;
+	row-gap: 28px;
+}
+.details-form__body:not(:last-child) {
+	margin-bottom: 43px;
+}
+.details-form__item {
+	flex: 1 1 50%;
+	padding: 0px 19px;
+	min-width: 213px;
+}
+.details-form__item--three-items-row {
+	flex: 1 1 33.333%;
+}
+.details-form__item:last-child {
+	flex-grow: 0;
+}
+.details-form__item select {
+	font-size: 14px;
+	color: #807d7e;
+	font-family: "Causten", sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.details-form__label {
+	display: block;
+	color: #3c4242;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.32px;
+	margin-bottom: 10px;
+}
+.details-form__input {
+	padding: 16px 20px;
+	border-radius: 8px;
+	background-color: #f6f6f6;
+	width: 100%;
+	height: 49px;
+}
+.details-form__label,
+.details-form__input {
+	cursor: pointer;
+}
+.details-form__input:focus {
+	outline: 1px solid #8a33fd;
+}
+.details-form__input::placeholder {
+	color: #807d7e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.2;
+	transition: all 0.3s;
+}
+.details-form__input:focus::placeholder {
+	opacity: 0;
+}
+
+.details-form__button:not(:last-child) {
+	margin-bottom: 20px;
+}
+.details-form__button:hover {
+	background-color: #303ebb;
+}
+.check-checkbox__item {
+	position: relative;
+}
+.check-checkbox__input {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+/* Псевдоклас стану "в фокусі по TAB" */
+.check-checkbox__input:focus-visible + .check-checkbox__label {
+	outline: 1px solid #8a33fd;
+}
+
+/* Псевдоклас стану "вибраний" */
+.check-checkbox__input:checked + .check-checkbox__label::before {
+	background: url("../img/check-out/down-arrow.svg") center/22px no-repeat;
+}
+.check-checkbox__label {
+	display: inline-flex;
+	gap: 10px;
+	color: #3c4242;
+	font-weight: 400;
+	line-height: 1.22;
+	align-items: center;
+	cursor: pointer;
+}
+.check-checkbox__label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 2px;
+	flex: 0 0 18px;
+	border: 2px solid #bebcbd;
+}
+
+/* Shipping */
+.shipping-form__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 60px;
+}
+.shipping-form__body:not(:last-child) {
+	margin-bottom: 50px;
+}
+.shipping-form__item:not(:last-child) {
+	border-bottom: 1px solid #edeef2;
+	margin-bottom: -30px;
+	padding-bottom: 30px;
+}
+.item-shipping__title-block:not(:last-child) {
+	margin-bottom: 30px;
+}
+.item-shipping__subtitle:not(:last-child) {
+	margin-bottom: 8px;
+}
+.item-shipping__text {
+	color: #3c4242;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.18;
+}
+.item-shipping__text P:not(:last-child) {
+	margin-bottom: 8px;
+}
+.item-shipping__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+	padding: 38px 48px 38px 28px;
+	border-radius: 12px;
+	background-color: #f6f6f6;
+}
+.item-shipping__row {
+	position: relative;
+	color: #3c4242;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.item-shipping__row:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	height: 1px;
+	width: 100%;
+	background-color: #bebcbd;
+}
+.item-shipping__input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.item-shipping__input:checked + .item-shipping__label::before {
+	background-color: #807d7e;
+	border: 4px solid #fff;
+}
+.item-shipping__label {
+	display: inline-flex;
+	gap: 19px;
+	align-items: center;
+	cursor: pointer;
+}
+.item-shipping__label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	border-radius: 50%;
+	outline: 1px solid #3c4242;
+}
+
+/* ----Shipping method----- */
+.item-shipping__row-description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+.item-shipping__charges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item-shipping__fees {
+	color: #807d7e;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.item-shipping__fees p:not(:last-child) {
+	margin-bottom: 8px;
+}
+/*-----Payment Method----*/
+.item-shipping__body--payment-method {
+	padding: 45px 48px 45px 28px;
+}
+.item-shipping__row--container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.item-shipping__card p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	padding-left: 37px;
+}
+.item-shipping__card-input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.item-shipping__card-input:checked + .item-shipping__card-label::before {
+	background-color: #807d7e;
+	border: 4px solid #fff;
+}
+.item-shipping__card-label {
+	display: inline-flex;
+	gap: 19px;
+	align-items: center;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.item-shipping__card-label:not(:last-child) {
+	margin-bottom: 5px;
+}
+.item-shipping__card-label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	border-radius: 50%;
+	outline: 1px solid #3c4242;
+}
+.item-shipping__row-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 30px;
+	padding: 0px 23px 0px 37px;
+}
+.content-row__logo {
+	display: inline-flex;
+	column-gap: 20px;
+}
+.content-row__item {
+	flex: 0 0 80px;
+}
+.content-row__item img {
+	width: 100%;
+}
+.content-row__form {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 28px;
+	margin: 0px -15px;
+}
+.form-row__item {
+	flex: 1 1 50%;
+	padding: 0px 15px;
+	min-width: 213px;
+}
+.form-row__input {
+	padding: 16px 20px;
+	border-radius: 8px;
+	border: 1px solid #3c4242;
+	height: 49px;
+	width: 100%;
+	background-color: transparent;
+	cursor: pointer;
+}
+.form-row__input:focus {
+	outline: 1px solid #8a33fd;
+	border: 1px solid transparent;
+}
+.form-row__input::placeholder {
+	color: #807d7e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.2;
+	transition: opacity 0.4s;
+}
+.form-row__input:focus::placeholder {
+	opacity: 0;
+}
+.form-row__input--code {
+	position: relative;
+}
+.form-row__button {
+	content: "";
+	position: absolute;
+	background: url("../img/check-out/eye.svg") center / cover no-repeat;
+	width: 20px;
+	height: 20px;
+	right: 40px;
+	bottom: 13px;
+}
+.shipping-form__button:hover {
+	background-color: #303ebb;
+}
+
+/* ==============================Footer============================= */
+.footer {
+	background-color: #ebe0e0;
+	padding: 20px;
+	text-align: center;
+}
+.footer__title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style-practice.css">
+	<title>Homework 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main class="page">
+			<!-- Головний (батьківський) блок форми тег form -->
+			<form enctype="multipart/form-data" method="GET" class="form" action="#">
+				<!-- input - Багатофункціональний елемент вводу даних тег input. -->
+				<div class="form__line">
+					<label for="name">Введіть своє ім'я</label>
+					<input id="name" class="form__input" autocomplete="off" name="name" placeholder="Введіть своє ім'я"
+						type="text">
+				</div>
+				<div class="form__line">
+					<!-- label - Окремий підпис поля вводу -->
+					<!-- <label for="age"Введіть свій вік</label> -->
+					<!-- <input id="age" minlength="2" maxlength="3" autocomplete="off" name="age" placeholder="Введіть свій вік"
+						type="text"> -->
+				</div>
+				<div class="form__line">
+					<!-- Тип email - Однорядковий ввід поштової адреси -->
+					<label for="email">Введіть E-email</label>
+					<input id="email" required name="email" placeholder="Введіть E-email" type="email">
+				</div>
+				<div class="form__line">
+					<!-- Тип hidden - Приховане поле. Використовується разом з value -->
+					<!-- <label for="secret">Введіть secret</label> -->
+					<input value="dsdfsc" name="secret" type="hidden">
+				</div>
+				<div class="form__line">
+					<!-- Тип tel - поле вводу телефонного номеру -->
+					<label for="phone">Введіть номер телефону</label>
+					<input id="phone" autocomplete="off" name="phone" placeholder="Введіть номер телефону" type="tel">
+				</div>
+				<div class="form__line">
+					<!-- Тип password - поле вводу паролю -->
+					<label for="password">Введіть свій пароль</label>
+					<input id="password" autocomplete="off" name="password" placeholder="Введіть свій пароль"
+						type="password">
+				</div>
+				<div class="form__line">
+					<!-- Тип number - поле вводу числа -->
+					<label for="age">Введіть свій вік</label>
+					<input id="age" autocomplete="off" name="age" placeholder="Введіть свій пароль" type="number">
+				</div>
+				<div class="form__line">
+					<!-- Тип color - поле вибору кольору -->
+					<label for="color">Виберіть колір</label>
+					<input id="color" name="color" type="color">
+				</div>
+				<div class="form__line">
+					<!-- Тип search - поле пошуку -->
+					<label for="search">Що ви шукаєте?</label>
+					<input id="search" name="search" type="search">
+				</div>
+				<div class="form__line">
+					<!-- Тип date - поле вибору дати -->
+					<label for="date">Оберіть дату</label>
+					<input id="date" name="date" type="date">
+				</div>
+				<div class="form__line">
+					<!-- Тип range - поле вибору значення -->
+					<label for="range">Як настрій?</label>
+					<input id="range" value="80" name="range" type="range">
+				</div>
+				<div class="form__line">
+					<!-- Тип checkbox - множинний вибір -->
+					<div class="form__checkbox checkbox">
+						<input class="checkbox__input" id="check1" name="car" type="checkbox">
+						<label class="checkbox__label" for="check1">Є тачка?</label>
+					</div>
+					<div class="form__checkbox checkbox">
+						<input class="checkbox__input" checked id="check2" name="flat" type="checkbox">
+						<label class="checkbox__label" for="check2">Є квартира?</label>
+					</div>
+				</div>
+				<div class="form__line">
+					<!-- Тип radio - одиночний вибір -->
+					<fieldset class="form__group">
+						<legend class="form__title">Група виробників№1</legend>
+						<div class="form__radio">
+							<label for="model-01">BYD</label>
+							<input id="model-01" checked name="group1" value="byd" type="radio">
+						</div>
+						<div class="form__radio">
+							<label for="model-02">VW</label>
+							<input id="model-02" name="group1" value="vw" type="radio">
+						</div>
+					</fieldset>
+					<fieldset class="form__group">
+						<legend class="form__title">Група виробників№2</legend>
+						<div class="form__radio">
+							<label for="model-01">Tesla</label>
+							<input id="model-01" name="group2" value="tesla" type="radio">
+						</div>
+						<div class="form__radio">
+							<label for="model-02">Toyota</label>
+							<input id="model-02" checked name="group2" value="toyota" type="radio">
+						</div>
+					</fieldset>
+					<div class="form__line">
+						<!-- Тип file - додати файл (файли) -->
+						<label for="choose-file">Додати файл</label>
+						<input multiple accept=".jpg, .webp, .png" id="choose-file" name="choose-file" type="file">
+					</div>
+					<div class="form__line">
+						<!-- тег textarea - ввід багаторядкового тексту -->
+						<label for="message">Ваше повідомлення</label>
+						<textarea name="message" class="form__textarea" id="message"></textarea>
+					</div>
+					<div class="form__line">
+						<!--
+							Тег  select - випадаючій список
+							Атрибут multiple
+							Тег option - елемент списку
+							Атрибут selected - вибраний за замовченням
+						 -->
+						<label for="list">Ваш список</label>
+						<select name="list" id="list">
+							<option value="01">Пункт №1</option>
+							<option value="02">Пункт №2</option>
+							<option selected value="03">Пункт №3</option>
+							<option value="04">Пункт №4</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<!-- button - Кнопка 
+							type="button" - кнопка нічого не робить :)
+							type="reset" - обнуляє (скидає) поля вводу у формі. Має знаходитить в середені тегу form.
+							type="submit" - відправляє форму. Має знаходитить в середені тегу form.
+						-->
+						<button type="button">Я просто кнока</button>
+						<button type="reset">Я кнока яка чистить форму</button>
+						<button type="submit">Я кнопка яка відправляє форму</button>
+					</div>
+
+				</div>
+			</form>
+		</main>
+		<footer class="footer"> </footer>
+	</div>
+</body>
+
+</html>
