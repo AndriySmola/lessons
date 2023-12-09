@@ -1,0 +1,88 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі, практика уроку теорія */
+body {
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	/* padding: 50px; */
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+/* ==============================Header============================ */
+
+/* ==============================Main============================== */
+
+/* -----------Practice----------- */
+.about {
+}
+.about__container {
+}
+.about__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+	row-gap: 30px;
+}
+.about__column {
+	padding: 0px 15px;
+	flex: 1 1 25%;
+}
+.about__item {
+	background-color: #45784c;
+	padding: 15px;
+	text-align: justify;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+/* адаптив зображень */
+.about__image {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 434 / 531;
+	object-fit: cover;
+	/* object-fit: contain; */
+	object-position: top;
+}
+
+@media (max-width: 840px) {
+	.about__column {
+		flex: 1 0 50%;
+	}
+}
+@media (max-width: 490px) {
+	.about__column {
+		flex: 1 0 100%;
+	}
+	.about__item {
+		margin: 0px -15px;
+	}
+}
+
+/* якщо пристрій вміє робити наведення, додаємо hover */
+@media (any-hover: hover) {
+	a:hover {
+	}
+}
+/* ==============================Footer============================ */
