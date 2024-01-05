@@ -1,0 +1,403 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+
+/* Підключення шрифтів вручну */
+/* @import url("fonts.css"); */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-size: 20px;
+	color: #fff;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.page {
+	/* padding: 50px; */
+}
+/* [class*="__container"] {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+} */
+/* ==============Header============== */
+
+/*==============Main=================*/
+/* -------теорія-------- */
+/* GRID */
+/* GRID-container */
+.grid-container {
+	display: grid;
+	/* height: 450px; */
+	/* побудова явної сітки */
+	/* grid-template-columns: 33.333% 33.333% 33.333%; */
+
+	/* записа при повторенні однакових ширин */
+	/* grid-template-columns: repeat(3, 33.333%); */
+
+	/* Одиниця виміпу FR (фракція) */
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-columns: 0.2fr 0.5fr; */
+
+	/* GAP + FR */
+	gap: 20px;
+	/* grid-template-columns: repeat(3, 33.333%); */
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-columns: 2fr 3fr; */
+	/* grid-template-columns: 7fr 7fr; */
+
+	/* Алгоритми автозаповнення (перебудови) */
+	/* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+	/* налаштування рядків */
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-rows: 100px; */
+	/* grid-template-rows: 100px 100px 100px 200px; */
+	/* grid-template-rows: repeat(4, 1fr); */
+	/* grid-template-rows: repeat(3, 1fr); */
+
+	/* універсальний запис, спочатку пишемо для рядків, потім для колонок */
+	/* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+	/* grid-template: repeat(3, 150px) / repeat(3, 150px); */
+
+	/* Налаштування неявної сітки */
+
+	/* явна сітка */
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-columns: repeat(3, 0.2fr); */
+	/* grid-template-rows: repeat(2, 1fr); */
+
+	/* налаштування ширини неявної колонки */
+	/* grid-auto-columns: 200px; */
+	/* grid-auto-columns: auto; */
+
+	/*алгоритм виводу об'єктів за межами явної сітки */
+	/* grid-auto-flow: row; */
+	/* grid-auto-flow: column; */
+
+	/* вирівнювання об'єктів */
+	/* grid-template-columns: repeat(2, 0.2fr); */
+	/* grid-template-rows: repeat(4, 50px); */
+
+	/* вирівнювання об'єктів в середині комірок */
+	/* justify-items: start; */
+	/* justify-items: end; */
+	/* justify-items: center; */
+	/* stretch за замовченням */
+	/* justify-items: stretch; */
+
+	/* вирівнювання контенту в середені грід контейнера вздовж горизонтальної вісі, щоб це побачити має бути місце, тобто значення
+	grid-template-columns менше 1fr */
+
+	/* start за замовченням */
+	/* justify-content: start; */
+	/* justify-content: center; */
+	/* justify-content: end; */
+	/* justify-content: space-around; */
+	/* justify-content: space-between; */
+	/* однаковий простір між об'єктами і краями */
+	/* justify-content: space-evenly; */
+
+	/* Вирівнювання об'єктів в середені комірок вздовж вертикальної лінії */
+	/* align-items: stretch; */
+	/* align-items: start; */
+	/* align-items: center; */
+
+	/* Вирівнювання контенту в середені комірок вздовж вертикальної лінії */
+	/* align-content: start; */
+	/* align-content: end; */
+	/* align-content: center; */
+	/* align-content: space-between; */
+	/* align-content: space-evenly; */
+
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-rows: repeat(5, 100px); */
+}
+
+/* GRID елементи */
+.grid-container__item {
+	background-color: #c1af3d;
+	padding: 15px;
+}
+
+/* управління розташуванням елемента по горизонталі*/
+.grid-container__item:nth-child(1) {
+	/* grid-column-start: 1; */
+	/* grid-column-end: 3; */
+	/* теж саме */
+	/* grid-column: span 2; */
+	/* grid-column: 1 / 3; */
+
+	/* якщо треба перемістити елемент */
+	/* grid-column-start: 2; */
+	/* grid-column-end: 3; */
+	/* теж саме */
+	/* grid-column: 2 / 3; */
+
+	/* grid-column-start: 2; */
+	/* grid-column-end: 4; */
+	/* теж саме */
+	/* grid-column: 2 / 4; */
+}
+.grid-container__item:nth-child(2) {
+	/* grid-column: 2 / 3; */
+	/* grid-row-start: 1; */
+	/* grid-row-end: 4; */
+	/* чи */
+	/* grid-column: 2 / 4; */
+	/* grid-row-start: 1; */
+	/* grid-row-end: 3; */
+}
+.grid-container__item:nth-child(5) {
+	/* grid-column: 2 / 3; */
+	/* grid-row-start: 3; */
+	/* grid-row-end: 5; */
+}
+
+/* GRID-AREA */
+/* 
+.grid-area {
+	display: grid;
+	grid-template-columns: 200px auto 200px;
+	grid-template-areas:
+		"header header header"
+		"sidebar content content"
+		"footer footer footer";
+}
+.grid-area > * {
+	padding: 15px;
+}
+.grid-area__header {
+	grid-area: header;
+	background-color: #77608d;
+}
+.grid-area__sidebar {
+	grid-area: sidebar;
+	background-color: #7a956b;
+}
+.grid-area__content {
+	grid-area: content;
+	background-color: #794f45;
+}
+.grid-area__footer {
+	grid-area: footer;
+	background-color: #77608d;
+}
+
+@media (max-width: 550px) {
+	.grid-area {
+		grid-template-columns: auto;
+		grid-template-areas:
+			"header"
+			"sidebar"
+			"content"
+			"footer";
+	}
+} 
+*/
+
+/* GRID-column, GRID-row */
+
+/* .grid-area {
+	display: grid;
+	grid-template-columns: 200px 1fr 200px;
+}
+.grid-area--margin {
+	margin-bottom: 50px;
+}
+.grid-area > * {
+	padding: 15px;
+}
+.grid-area__header {
+	grid-column: span 3;
+	background-color: #77608d;
+}
+.grid-area__sidebar {
+	background-color: #7a956b;
+}
+.grid-area__content {
+	grid-column: span 2;
+	background-color: #794f45;
+}
+.grid-area__footer {
+	grid-column: span 3;
+	background-color: #77608d;
+}
+
+@media (max-width: 550px) {
+	.grid-area {
+		grid-template-columns: auto;
+	}
+	.grid-area__header {
+		grid-column: span 1;
+	}
+	.grid-area__content {
+		grid-column: span 1;
+	}
+	.grid-area__footer {
+		grid-column: span 1;
+	}
+} */
+
+/* FLEX приклад */
+/* .flex-area {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-area__header {
+	flex: 1 1 100%;
+	padding: 15px;
+	background-color: #77608d;
+}
+.flex-area__sidebar {
+	flex: 0 0 200px;
+	padding: 15px;
+	background-color: #7a956b;
+}
+.flex-area__content {
+	flex: 1 1 auto;
+	padding: 15px;
+	background-color: #794f45;
+}
+.flex-area__footer {
+	flex: 1 1 100%;
+	padding: 15px;
+	background-color: #77608d;
+}
+
+@media (min-width: 550px) {
+	.flex-area__body {
+		display: flex;
+	}
+} */
+
+/* ================приклад з макету================== */
+.similar-products {
+}
+.similar-products__container {
+	max-width: 1270px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0px auto;
+}
+.similar-products__title {
+	font-weight: 700;
+}
+.similar-products__title:not(:last-child) {
+	margin-bottom: 30px;
+}
+.similar-products__items {
+	display: grid;
+	column-gap: 37px;
+	row-gap: 50px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.similar-products__item {
+}
+.item-products {
+	position: relative;
+	display: grid;
+	row-gap: 30px;
+}
+.item-products__link-image {
+	display: block;
+}
+/* .item-products__link-image:not(:last-child) {
+	margin-bottom: 30px;
+} */
+.item-products__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 282 / 370;
+	border-radius: 12px;
+}
+.item-products__favorite {
+	position: absolute;
+	top: 27px;
+	right: 21px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #fff url("../img/test/heart.svg") center / 14px no-repeat;
+	transition: transform 0.3s;
+}
+@media (any-hover: hover) {
+	.item-products__favorite:hover {
+		transform: scale(1.1);
+	}
+}
+.item-products__body {
+	display: flex;
+}
+.item-products__content {
+	flex-grow: 1;
+	display: grid;
+	row-gap: 10px;
+}
+.item-products__link-title {
+}
+.item-products__title {
+	font-weight: 700;
+	font-size: 16px;
+}
+@media (any-hover: hover) {
+	.item-products__link-title:hover {
+		text-decoration: underline;
+	}
+}
+.item-products__text {
+	color: #b2b1b1;
+	font-size: 14px;
+}
+.item-products__price {
+	border-radius: 8px;
+	background-color: #f6f6f6;
+	padding: 10px 20px;
+	color: #333;
+	font-weight: 700;
+}
+
+/* ==============================Footer============================= */
+.footer {
+	background-color: #fff9f4;
+}
+.footer__container {
+	padding: 20px 0px;
+}
+.footer__text {
+	font-family: "Merriweather", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 700;
+	color: #000;
+}
+.footer__text > * {
+	margin-bottom: 10px;
+}
+.footer__text > *:last-child {
+	margin-bottom: 0px;
+}
+@media (max-width: 767.98px) {
+	.footer__container {
+		padding: 10px 0px;
+	}
+	.footer__text {
+		font-size: 22px;
+	}
+}
