@@ -1,0 +1,287 @@
+/* Підключення шрифтів Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+/* Підключення шрифтів вручну */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	/* padding: 50px 15px; */
+}
+.header {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 25px;
+	background-color: #cecece;
+	padding: 15px 0px;
+}
+.header-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.header-list-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.header-list-link:hover {
+	text-decoration: underline;
+}
+
+/* ==================Game01==================== */
+.game01 {
+	max-width: 910px;
+	margin: 0 auto 50px;
+	padding: 50px 15px;
+}
+.game01-title {
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.game01-text {
+	width: 200px;
+	height: 60px;
+	padding: 20px 20px;
+	border: 1px solid #000;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.game {
+	min-height: 600px;
+}
+.game-line {
+	background-color: orange;
+	border-radius: 50%;
+}
+.game-line-1 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-2 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-3 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-4 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-5 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.game-line-6 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-7 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-8 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-line-9 {
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+.game-text {
+	opacity: 0;
+	font-size: 40px;
+	font-weight: 600;
+}
+.game01-text:hover + .game-line-1 {
+	opacity: 1;
+}
+.game-line-1:hover + .game-line-2 {
+	opacity: 1;
+}
+.game-line-2:hover + .game-line-3 {
+	opacity: 1;
+}
+.game-line-3:hover + .game-line-4 {
+	opacity: 1;
+}
+.game-line-4:hover + .game-line-5 {
+	opacity: 1;
+}
+.game-line-5:hover + .game-line-6 {
+	opacity: 1;
+}
+.game-line-6:hover + .game-line-7 {
+	opacity: 1;
+}
+.game-line-7:hover + .game-line-8 {
+	opacity: 1;
+}
+.game-line-8:hover + .game-line-9 {
+	opacity: 1;
+}
+.game-line-9:hover + .game-text {
+	opacity: 1;
+}
+.game-text:hover {
+	opacity: 1;
+}
+/* ------------------------------------------------------------------ */
+
+/* ==================Game01==================== */
+.game02 {
+	background-color: #9b73cf;
+	text-align: center;
+	max-width: 1230px;
+	margin: 0 auto 50px;
+	padding: 50px 15px;
+}
+.game02-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.game02-block {
+	padding: 50px 100px;
+	/* font-size: 0; */
+}
+
+.game02-line {
+	background-color: #ffa500;
+}
+
+.game02-line-1 {
+	width: 100px;
+	height: 200px;
+}
+
+.game02-line-2 {
+	width: 1000px;
+	height: 100px;
+	margin-top: -100px;
+	visibility: hidden;
+}
+
+.game02-line-3 {
+	width: 70px;
+	height: 200px;
+	width: 70px;
+	height: 200px;
+	margin: -100px 0 -50px 930px;
+	visibility: hidden;
+}
+
+.game02-line-4 {
+	width: 1000px;
+	height: 50px;
+	visibility: hidden;
+}
+
+.game02-line-5 {
+	width: 45px;
+	height: 140px;
+	margin: -50px 0 -40px 0;
+	visibility: hidden;
+}
+
+.game02-line-6 {
+	width: 350px;
+	height: 40px;
+	visibility: hidden;
+}
+
+.game02-line-7 {
+	height: 190px;
+	width: 25px;
+	margin: -40px 0 0 325px;
+	visibility: hidden;
+}
+
+.game02-end {
+	width: 25px;
+	height: 25px;
+	background-color: firebrick;
+	margin-left: 325px;
+	visibility: hidden;
+}
+
+.game02-prize {
+	width: 750px;
+	height: 500px;
+	background: url("../img/game/finish-line.jpg") center / cover no-repeat;
+	visibility: hidden;
+}
+
+.game02-line-1:hover + .game02-line-2,
+.game02-line-2:hover,
+.game02-line-2:hover + .game02-line-3,
+.game02-line-3:hover,
+.game02-line-3:hover + .game02-line-4,
+.game02-line-4:hover,
+.game02-line-4:hover + .game02-line-5,
+.game02-line-5:hover,
+.game02-line-5:hover + .game02-line-6,
+.game02-line-6:hover,
+.game02-line-6:hover + .game02-line-7,
+.game02-line-7:hover,
+.game02-line-7:hover + .game02-end,
+.game02-end:hover,
+.game02-end:hover + .game02-prize,
+.game02-prize:hover {
+	visibility: visible;
+}
+/* ------------------------------------------------------------------ */
+
+/* ==============================Footer============================= */
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+}
+.list {
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #cecece;
+	/* height: 100px; */
+}
+.list-item {
+	margin-bottom: 20px;
+}
+.list-item:last-child {
+	margin-bottom: 0px;
+}
+.footer {
+	background-color: #cecece;
+	padding: 20px 0px;
+	align-items: center;
+}
+.item-link {
+	color: #706f6f;
+	text-shadow: 5px 6px 7px #12414f;
+}
+.item-link:hover {
+	text-decoration: underline;
+}
