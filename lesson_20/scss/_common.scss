@@ -1,0 +1,67 @@
+$mainColor: #3c4242;
+$mainFont: "Causten", sans-serif;
+$mainFontSize: 18px;
+
+body{
+	font-size: $mainFontSize;
+	color: $mainColor;
+	font-family: $mainFont;
+	& .wrapper {
+		overflow: clip;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		& main {
+			flex-grow: 1;
+		}
+	}
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	@media (max-width: 550px) {
+		padding: 0px 10px;
+	}
+}
+
+.title {
+	font-family: "Coresansc", sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	letter-spacing: 0.68px;
+	line-height: 1.1;
+	display: inline-flex;
+	column-gap: 20px;
+	@media (max-width: 991.98px) {
+		font-size: 28px;
+		column-gap: 15px;
+	}
+	@media (max-width: 600px) {
+		column-gap: 10px;
+		font-size: 22px;
+	}
+	&::before {
+		content: "";
+		width: 6px;
+		height: 30px;
+		border-radius: 10px;
+		background-color: #8a33fd;
+		@media (max-width: 991.98px) {
+			height: 28px;
+		}
+		@media (max-width: 600px) {
+			height: 22px;
+		}
+	}
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
