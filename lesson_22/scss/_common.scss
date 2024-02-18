@@ -1,0 +1,56 @@
+// Змінні
+$tablet: 991.98px;
+$mobile: 767.98px;
+
+$darkColor: #37393F;
+$whiteColor: #ffffff;
+$blueColor: #6b77e5;
+$greenColor: #40ddb6;
+$mainFont: "Inter", sans-serif;
+$mainFontSize: 18px;
+
+// Міксін----------------------------------------------
+@mixin underline ($lineColor: transparent, $lineSize: 1.5px) {
+	text-decoration: underline;
+	text-decoration-color: $lineColor;
+	text-decoration-thickness: $lineSize;
+}
+
+@mixin margBottNotLast($marginBottom) {
+	&:not(:last-child) {
+	  margin-bottom: $marginBottom;
+	}
+}
+
+// Шаблон----------------------------------------------
+%shopLink {
+	color: $whiteColor;
+	background-color: $blueColor;
+	padding: 21px 27px;
+	text-align: center;
+	font-family: "Cabin", sans-serif;
+	font-size: $mainFontSize;
+	font-weight: 600;
+	transition: all 0.3s;
+	@media (any-hover: hover) {
+		&:hover{
+			background-color: $greenColor;
+			color: $whiteColor;
+		}
+	}
+}
+
+%footerPadding {
+	padding-left: 76px;
+	padding-right: 85px;
+	@media (max-width: 1130px){
+		padding: 0 20px;
+	}
+	@media (max-width: 650px){
+		padding: 0 10px;
+	}
+}
+
+
+
+
